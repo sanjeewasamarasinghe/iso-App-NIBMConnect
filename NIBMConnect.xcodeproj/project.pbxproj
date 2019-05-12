@@ -16,6 +16,7 @@
 		4BFA07322283D3B100956B86 /* NIBMConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA07312283D3B100956B86 /* NIBMConnectUITests.swift */; };
 		ACEFCEA32287C97300A2582A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEA22287C97300A2582A /* MainViewController.swift */; };
 		ACEFCEA52287CA1C00A2582A /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */; };
+		ACEFCEA72287D28800A2582A /* SingIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA62287D28800A2582A /* SingIn.storyboard */; };
 		CE8D9208B6A2691B5C40E734 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333498DF188C0FE90B08A34 /* Pods_NIBMConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		4BFA07332283D3B100956B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEFCEA22287C97300A2582A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
+		ACEFCEA62287D28800A2582A /* SingIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingIn.storyboard; sourceTree = "<group>"; };
 		F6B650BBC485B3AB9774773E /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				4BFA071D2283D3B000956B86 /* Info.plist */,
 				ACEFCEA22287C97300A2582A /* MainViewController.swift */,
 				ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */,
+				ACEFCEA62287D28800A2582A /* SingIn.storyboard */,
 			);
 			path = NIBMConnect;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				4BFA071C2283D3B000956B86 /* LaunchScreen.storyboard in Resources */,
 				4BFA07192283D3B000956B86 /* Assets.xcassets in Resources */,
 				4BFA07172283D3A800956B86 /* Main.storyboard in Resources */,
+				ACEFCEA72287D28800A2582A /* SingIn.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

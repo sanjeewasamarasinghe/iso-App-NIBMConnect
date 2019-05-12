@@ -21,9 +21,26 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Db-R1-N1k">
                                 <rect key="frame" x="142" y="125" width="90" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="NEXT &gt;&gt;"/>
+                                <state key="normal" title="LogIN &gt;&gt;"/>
                                 <connections>
                                     <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1o-6N-eEF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsD-6m-Mdg">
+                                <rect key="frame" x="142" y="178" width="90" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SingIN &gt;&gt;"/>
+                                <connections>
+                                    <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DR6-sC-VXY"/>
+                                    <action selector="showSingInPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zaq-JL-PS6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c98-CG-kq5">
+                                <rect key="frame" x="153" y="242" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SingInOut"/>
+                                <connections>
+                                    <action selector="singInOutBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztW-1N-YoV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,8 +48,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="MainNext" destination="8Db-R1-N1k" id="s3p-5n-PKl"/>
+                        <outlet property="MainNext" destination="fsD-6m-Mdg" id="ed6-Sb-Asm"/>
+                        <outlet property="MainSingIn" destination="fsD-6m-Mdg" id="TmW-Py-pjg"/>
+                        <outlet property="SingInOut" destination="c98-CG-kq5" id="mmK-Rg-eiL"/>
                         <segue destination="30O-GQ-cVB" kind="show" identifier="LogIn" id="Aba-Th-Hm3"/>
+                        <segue destination="eMg-ci-Dco" kind="show" identifier="singInOut" id="ej4-vi-gpa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -45,7 +65,15 @@
                 <viewControllerPlaceholder storyboardName="LogIn" id="30O-GQ-cVB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2b4-kn-Bof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992" y="-40"/>
+            <point key="canvasLocation" x="1026" y="-33"/>
+        </scene>
+        <!--SingIn-->
+        <scene sceneID="lzA-fz-aGV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SingIn" id="eMg-ci-Dco" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SX5-7T-MdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="215"/>
         </scene>
     </scenes>
 </document>
