@@ -13,6 +13,9 @@ import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
+    
+    //var window :UIWindow?
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print(error.localizedDescription)
@@ -27,8 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
                     // ...
                     print(result?.user.email)
                     print(result?.user.displayName)
+                    
                     //Self.dismiss(animated: true, completion: nil)
                     //self.window?.rootViewController?.dismiss(animated: true, completion: nil)
+                    //self.window?.rootViewController?.performSegueperformSegue(withIdentifier: "singInOut", sender: nil)
                     
                 }else{
                     print(error?.localizedDescription)
@@ -41,8 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance().handle(url,
-                                                 sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
-                                                 annotation: [:])
+        sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+        annotation: [:])
     }
 
     var window: UIWindow?

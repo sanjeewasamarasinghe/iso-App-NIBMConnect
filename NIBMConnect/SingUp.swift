@@ -30,6 +30,7 @@ class SingUp: UIViewController {
                 self.present(alert, animated: true, completion: nil)
                 
             }else{
+                
                 self.dismiss(animated: true, completion: nil)
             }
             

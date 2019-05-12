@@ -11,14 +11,15 @@ import Firebase
 import FirebaseAuth
 import GoogleSignIn
 
-class MainViewController: UIViewController {
+
+class MainViewController: UIViewController ,GIDSignInUIDelegate{
 
     @IBOutlet weak var MainNext: UIButton!
 
     @IBOutlet weak var SingInOut: UIButton!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        //GIDSignIn.sharedInstance()?.uiDelegate = self
+    super.viewDidLoad()
+        GIDSignIn.sharedInstance().uiDelegate = self
         // Do any additional setup after loading the view.
     }
     @IBAction func singInOutBtn(_ sender: Any) {

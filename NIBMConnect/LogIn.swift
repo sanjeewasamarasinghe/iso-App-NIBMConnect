@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import GoogleSignIn
 
 class LogIn: UIViewController {
 
@@ -16,10 +17,13 @@ class LogIn: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func btnBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func btnSingUp(_ sender: Any) {
         self.performSegue(withIdentifier: "SingUpOut", sender: nil)
     }
