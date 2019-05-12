@@ -40,13 +40,13 @@
                     </view>
                     <connections>
                         <outlet property="SingInOut" destination="c98-CG-kq5" id="mmK-Rg-eiL"/>
-                        <segue destination="30O-GQ-cVB" kind="show" identifier="LogIn" id="Aba-Th-Hm3"/>
-                        <segue destination="eMg-ci-Dco" kind="show" identifier="singInOut" id="ej4-vi-gpa"/>
+                        <segue destination="30O-GQ-cVB" kind="presentation" identifier="LogIn" id="Aba-Th-Hm3"/>
+                        <segue destination="eMg-ci-Dco" kind="presentation" identifier="singInOut" id="ej4-vi-gpa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="498" y="126"/>
+            <point key="canvasLocation" x="-42" y="109"/>
         </scene>
         <!--LogIn-->
         <scene sceneID="o71-Pb-Avo">
@@ -54,7 +54,7 @@
                 <viewControllerPlaceholder storyboardName="LogIn" id="30O-GQ-cVB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2b4-kn-Bof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1026" y="-33"/>
+            <point key="canvasLocation" x="707" y="-58"/>
         </scene>
         <!--SingIn-->
         <scene sceneID="lzA-fz-aGV">
@@ -62,7 +62,7 @@
                 <viewControllerPlaceholder storyboardName="SingIn" id="eMg-ci-Dco" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SX5-7T-MdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="215"/>
+            <point key="canvasLocation" x="670" y="337"/>
         </scene>
     </scenes>
 </document>

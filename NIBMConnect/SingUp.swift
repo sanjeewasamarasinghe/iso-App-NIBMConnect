@@ -1,5 +1,5 @@
 //
-//  LogIn.swift
+//  SingUp.swift
 //  NIBMConnect
 //
 //  Created by Guest User on 5/12/19.
@@ -7,33 +7,30 @@
 //
 
 import UIKit
-import Firebase
 import FirebaseAuth
+import Firebase
 
-class LogIn: UIViewController {
-
+class SingUp: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
+    
     @IBOutlet weak var txtEmail: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnSingUp(_ sender: Any) {
-        self.performSegue(withIdentifier: "SingUpOut", sender: nil)
-    }
-    @IBAction func btnLogin(_ sender: Any) {
-        Auth.auth().signIn(withEmail: self.txtEmail.text!,password:self.txtPassword.text!){
-            [weak self] user, error in guard let strongSelf = self else {return}
-            //...
+    @IBAction func btnSingIn(_ sender: Any) {
+        Auth.auth().createUser(withEmail: self.txtEmail.text!, password: self.txtPassword.text! ){
+            (user,error)in
             if error != nil {
-                let alert = UIAlertController(title: "login Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let alert = UIAlertController(title: "Singin Error", message: error?.localizedDescription, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title:"Click",style:.default,handler:nil))
-                strongSelf.present(alert, animated: true, completion: nil)
+                self.present(alert, animated: true, completion: nil)
                 
             }else{
-                strongSelf.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: true, completion: nil)
             }
             
         }

@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sing Up-->
         <scene sceneID="pqM-Kg-XOG">
             <objects>
-                <viewController id="mRg-tD-T2i" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ram-63-IAb">
+                <viewController id="mRg-tD-T2i" customClass="SingUp" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="ram-63-IAb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -26,24 +26,31 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eah-MV-jRA">
-                                <rect key="frame" x="139" y="148" width="97" height="30"/>
+                                <rect key="frame" x="139" y="134" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2n-pk-vRb">
-                                <rect key="frame" x="147" y="227" width="80" height="59"/>
+                                <rect key="frame" x="156" y="227" width="80" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="SingIn">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSingIn:" destination="mRg-tD-T2i" eventType="touchUpInside" id="4Pp-Ve-rHV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bxb-SS-731"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="AFn-3K-X5e" id="BYe-jl-OA6"/>
+                        <outlet property="txtPassword" destination="eah-MV-jRA" id="NWb-We-A1e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBl-xz-AiC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

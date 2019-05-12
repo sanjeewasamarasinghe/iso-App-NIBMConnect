@@ -20,6 +20,9 @@
 		ACEFCEA92287E0F900A2582A /* SingUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA82287E0F900A2582A /* SingUp.storyboard */; };
 		ACEFCEAB2287E3C300A2582A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEAA2287E3C300A2582A /* GoogleService-Info.plist */; };
 		ACEFCEAD2287E44E00A2582A /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEAC2287E44E00A2582A /* LogIn.swift */; };
+		ACEFCEAF2287ED4D00A2582A /* SingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEAE2287ED4D00A2582A /* SingUp.swift */; };
+		ACEFCEB12287F28500A2582A /* SingIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEB02287F28500A2582A /* SingIn.swift */; };
+		ACEFCEB32287F74600A2582A /* AppTempData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEB22287F74600A2582A /* AppTempData.swift */; };
 		CE8D9208B6A2691B5C40E734 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333498DF188C0FE90B08A34 /* Pods_NIBMConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,9 @@
 		ACEFCEA82287E0F900A2582A /* SingUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingUp.storyboard; sourceTree = "<group>"; };
 		ACEFCEAA2287E3C300A2582A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACEFCEAC2287E44E00A2582A /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		ACEFCEAE2287ED4D00A2582A /* SingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUp.swift; sourceTree = "<group>"; };
+		ACEFCEB02287F28500A2582A /* SingIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingIn.swift; sourceTree = "<group>"; };
+		ACEFCEB22287F74600A2582A /* AppTempData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTempData.swift; sourceTree = "<group>"; };
 		F6B650BBC485B3AB9774773E /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,10 +130,13 @@
 				4BFA071D2283D3B000956B86 /* Info.plist */,
 				ACEFCEAA2287E3C300A2582A /* GoogleService-Info.plist */,
 				ACEFCEA22287C97300A2582A /* MainViewController.swift */,
+				ACEFCEB22287F74600A2582A /* AppTempData.swift */,
 				ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */,
 				ACEFCEA62287D28800A2582A /* SingIn.storyboard */,
 				ACEFCEA82287E0F900A2582A /* SingUp.storyboard */,
 				ACEFCEAC2287E44E00A2582A /* LogIn.swift */,
+				ACEFCEAE2287ED4D00A2582A /* SingUp.swift */,
+				ACEFCEB02287F28500A2582A /* SingIn.swift */,
 			);
 			path = NIBMConnect;
 			sourceTree = "<group>";
@@ -390,8 +399,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACEFCEA32287C97300A2582A /* MainViewController.swift in Sources */,
+				ACEFCEAF2287ED4D00A2582A /* SingUp.swift in Sources */,
 				4BFA07142283D3A800956B86 /* ViewController.swift in Sources */,
+				ACEFCEB12287F28500A2582A /* SingIn.swift in Sources */,
 				4BFA07122283D3A800956B86 /* AppDelegate.swift in Sources */,
+				ACEFCEB32287F74600A2582A /* AppTempData.swift in Sources */,
 				ACEFCEAD2287E44E00A2582A /* LogIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

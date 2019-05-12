@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import GoogleSignIn
 
 class MainViewController: UIViewController {
 
@@ -15,7 +18,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var SingInOut: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //GIDSignIn.sharedInstance()?.uiDelegate = self
         // Do any additional setup after loading the view.
     }
     @IBAction func singInOutBtn(_ sender: Any) {
@@ -26,6 +29,20 @@ class MainViewController: UIViewController {
     
     @IBAction func showNext(_ sender: Any) {
         self.performSegue(withIdentifier: "LogIn", sender: nil)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        AppTempData.userHandleApp=Auth.auth().addStateDidChangeListener{(auth,user)in
+            if user == nil{
+                self.performSegue(withIdentifier: "LogIn", sender: nil)
+            }else{
+                self.performSegue(withIdentifier: "singInOut", sender: nil)
+            }
+        }
+        
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(AppTempData.userHandleApp!)
     }
     /*
     // MARK: - Navigation
