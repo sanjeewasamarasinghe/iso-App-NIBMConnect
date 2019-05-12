@@ -10,16 +10,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log In-->
         <scene sceneID="NAs-Rg-Ic2">
             <objects>
-                <viewController id="5G9-Gb-jdS" sceneMemberID="viewController">
+                <viewController id="5G9-Gb-jdS" customClass="LogIn" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7Z-Qf-0aV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H74-8b-3Zi">
-                                <rect key="frame" x="102" y="75" width="170" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uD8-gD-dMg">
+                                <rect key="frame" x="102" y="137" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npd-5H-iaA">
+                                <rect key="frame" x="141" y="214" width="93" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="LogIn"/>
+                                <connections>
+                                    <action selector="btnLogin:" destination="5G9-Gb-jdS" eventType="touchUpInside" id="I17-2a-ISo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3m-Bb-aRU">
+                                <rect key="frame" x="141" y="280" width="93" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SingUp"/>
+                                <connections>
+                                    <action selector="btnSingUp:" destination="5G9-Gb-jdS" eventType="touchUpInside" id="76k-Qf-sxU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H74-8b-3Zi">
+                                <rect key="frame" x="88" y="75" width="170" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -30,10 +55,23 @@
                         <viewLayoutGuide key="safeArea" id="KUt-K6-Y6N"/>
                     </view>
                     <navigationItem key="navigationItem" id="hPl-Fi-zPK"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="H74-8b-3Zi" id="4m5-B5-l2G"/>
+                        <outlet property="txtPassword" destination="uD8-gD-dMg" id="Jht-G8-3KT"/>
+                        <segue destination="chs-cu-Psy" kind="show" identifier="SingUpOut" id="OSK-FY-3wo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsg-qy-S7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044" y="76.911544227886068"/>
+        </scene>
+        <!--SingUp-->
+        <scene sceneID="efa-f4-HDT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SingUp" id="chs-cu-Psy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVN-yA-WZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="-77"/>
         </scene>
     </scenes>
 </document>

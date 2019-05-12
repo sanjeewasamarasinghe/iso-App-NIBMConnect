@@ -17,6 +17,9 @@
 		ACEFCEA32287C97300A2582A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEA22287C97300A2582A /* MainViewController.swift */; };
 		ACEFCEA52287CA1C00A2582A /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */; };
 		ACEFCEA72287D28800A2582A /* SingIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA62287D28800A2582A /* SingIn.storyboard */; };
+		ACEFCEA92287E0F900A2582A /* SingUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA82287E0F900A2582A /* SingUp.storyboard */; };
+		ACEFCEAB2287E3C300A2582A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEAA2287E3C300A2582A /* GoogleService-Info.plist */; };
+		ACEFCEAD2287E44E00A2582A /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEAC2287E44E00A2582A /* LogIn.swift */; };
 		CE8D9208B6A2691B5C40E734 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333498DF188C0FE90B08A34 /* Pods_NIBMConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		ACEFCEA22287C97300A2582A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		ACEFCEA62287D28800A2582A /* SingIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingIn.storyboard; sourceTree = "<group>"; };
+		ACEFCEA82287E0F900A2582A /* SingUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingUp.storyboard; sourceTree = "<group>"; };
+		ACEFCEAA2287E3C300A2582A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACEFCEAC2287E44E00A2582A /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		F6B650BBC485B3AB9774773E /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,9 +122,12 @@
 				4BFA07182283D3B000956B86 /* Assets.xcassets */,
 				4BFA071A2283D3B000956B86 /* LaunchScreen.storyboard */,
 				4BFA071D2283D3B000956B86 /* Info.plist */,
+				ACEFCEAA2287E3C300A2582A /* GoogleService-Info.plist */,
 				ACEFCEA22287C97300A2582A /* MainViewController.swift */,
 				ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */,
 				ACEFCEA62287D28800A2582A /* SingIn.storyboard */,
+				ACEFCEA82287E0F900A2582A /* SingUp.storyboard */,
+				ACEFCEAC2287E44E00A2582A /* LogIn.swift */,
 			);
 			path = NIBMConnect;
 			sourceTree = "<group>";
@@ -266,11 +275,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEFCEA92287E0F900A2582A /* SingUp.storyboard in Resources */,
 				ACEFCEA52287CA1C00A2582A /* LogIn.storyboard in Resources */,
 				4BFA071C2283D3B000956B86 /* LaunchScreen.storyboard in Resources */,
 				4BFA07192283D3B000956B86 /* Assets.xcassets in Resources */,
 				4BFA07172283D3A800956B86 /* Main.storyboard in Resources */,
 				ACEFCEA72287D28800A2582A /* SingIn.storyboard in Resources */,
+				ACEFCEAB2287E3C300A2582A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +392,7 @@
 				ACEFCEA32287C97300A2582A /* MainViewController.swift in Sources */,
 				4BFA07142283D3A800956B86 /* ViewController.swift in Sources */,
 				4BFA07122283D3A800956B86 /* AppDelegate.swift in Sources */,
+				ACEFCEAD2287E44E00A2582A /* LogIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

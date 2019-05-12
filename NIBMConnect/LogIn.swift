@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  LogIn.swift
 //  NIBMConnect
 //
 //  Created by Guest User on 5/12/19.
@@ -8,25 +8,22 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class LogIn: UIViewController {
 
-    @IBOutlet weak var MainNext: UIButton!
-
-    @IBOutlet weak var SingInOut: UIButton!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var txtEmail: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func singInOutBtn(_ sender: Any) {
-        self.performSegue(withIdentifier: "singInOut", sender: nil)
+    
+    @IBAction func btnSingUp(_ sender: Any) {
+        self.performSegue(withIdentifier: "SingUpOut", sender: nil)
+    }
+    @IBAction func btnLogin(_ sender: Any) {
     }
     
-
-    
-    @IBAction func showNext(_ sender: Any) {
-        self.performSegue(withIdentifier: "LogIn", sender: nil)
-    }
     /*
     // MARK: - Navigation
 
