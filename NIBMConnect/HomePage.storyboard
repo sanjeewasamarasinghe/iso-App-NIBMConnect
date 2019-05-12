@@ -52,6 +52,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="p2d-vQ-8z2" id="i6l-Ky-JH3"/>
+                                    <outlet property="delegate" destination="p2d-vQ-8z2" id="Ahz-jA-dEh"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
