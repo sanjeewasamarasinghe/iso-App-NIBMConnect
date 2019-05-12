@@ -18,7 +18,7 @@ class SingIn: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnSingOut(_ sender: Any) {
+    @IBAction func btnSingOutTwo(_ sender: Any) {
         let firebaseAuth = Auth.auth()
         do{
             try firebaseAuth.signOut()
@@ -29,6 +29,8 @@ class SingIn: UIViewController {
             print ("Eror signing out: %@", signOutError)
         }
     }
+    
+   
     
     /*
     // MARK: - Navigation

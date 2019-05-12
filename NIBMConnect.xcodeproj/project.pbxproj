@@ -23,6 +23,10 @@
 		ACEFCEAF2287ED4D00A2582A /* SingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEAE2287ED4D00A2582A /* SingUp.swift */; };
 		ACEFCEB12287F28500A2582A /* SingIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEB02287F28500A2582A /* SingIn.swift */; };
 		ACEFCEB32287F74600A2582A /* AppTempData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEB22287F74600A2582A /* AppTempData.swift */; };
+		ACEFCEB722883D7500A2582A /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEB622883D7500A2582A /* MyProfile.storyboard */; };
+		ACEFCEB922883E1300A2582A /* HomeWork.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEB822883E1300A2582A /* HomeWork.storyboard */; };
+		ACEFCEBB2288416D00A2582A /* SingOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEBA2288416D00A2582A /* SingOut.storyboard */; };
+		ACEFCEBE228841EB00A2582A /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEBD228841EB00A2582A /* HomePage.storyboard */; };
 		CE8D9208B6A2691B5C40E734 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333498DF188C0FE90B08A34 /* Pods_NIBMConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,10 @@
 		ACEFCEAE2287ED4D00A2582A /* SingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUp.swift; sourceTree = "<group>"; };
 		ACEFCEB02287F28500A2582A /* SingIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingIn.swift; sourceTree = "<group>"; };
 		ACEFCEB22287F74600A2582A /* AppTempData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTempData.swift; sourceTree = "<group>"; };
+		ACEFCEB622883D7500A2582A /* MyProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfile.storyboard; sourceTree = "<group>"; };
+		ACEFCEB822883E1300A2582A /* HomeWork.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeWork.storyboard; sourceTree = "<group>"; };
+		ACEFCEBA2288416D00A2582A /* SingOut.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingOut.storyboard; sourceTree = "<group>"; };
+		ACEFCEBD228841EB00A2582A /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		F6B650BBC485B3AB9774773E /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +145,10 @@
 				ACEFCEAC2287E44E00A2582A /* LogIn.swift */,
 				ACEFCEAE2287ED4D00A2582A /* SingUp.swift */,
 				ACEFCEB02287F28500A2582A /* SingIn.swift */,
+				ACEFCEB622883D7500A2582A /* MyProfile.storyboard */,
+				ACEFCEB822883E1300A2582A /* HomeWork.storyboard */,
+				ACEFCEBA2288416D00A2582A /* SingOut.storyboard */,
+				ACEFCEBD228841EB00A2582A /* HomePage.storyboard */,
 			);
 			path = NIBMConnect;
 			sourceTree = "<group>";
@@ -285,6 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACEFCEA92287E0F900A2582A /* SingUp.storyboard in Resources */,
+				ACEFCEBB2288416D00A2582A /* SingOut.storyboard in Resources */,
+				ACEFCEB922883E1300A2582A /* HomeWork.storyboard in Resources */,
+				ACEFCEBE228841EB00A2582A /* HomePage.storyboard in Resources */,
+				ACEFCEB722883D7500A2582A /* MyProfile.storyboard in Resources */,
 				ACEFCEA52287CA1C00A2582A /* LogIn.storyboard in Resources */,
 				4BFA071C2283D3B000956B86 /* LaunchScreen.storyboard in Resources */,
 				4BFA07192283D3B000956B86 /* Assets.xcassets in Resources */,
