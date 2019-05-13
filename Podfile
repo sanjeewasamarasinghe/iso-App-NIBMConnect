@@ -17,5 +17,6 @@ target 'NIBMConnect' do
 	pod 'Firebase/Database'
 	pod 'Alamofire'
 	pod 'AlamofireImage', '~> 3.5'
+	pod 'Kingfisher',
 
 end

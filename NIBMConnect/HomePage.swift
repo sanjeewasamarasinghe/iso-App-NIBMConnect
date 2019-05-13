@@ -97,8 +97,15 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300.0
+        return 150.0
     }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "Details", sender: indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    
     
     /*
     // MARK: - Navigation

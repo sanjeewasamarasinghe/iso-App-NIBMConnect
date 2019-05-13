@@ -33,6 +33,7 @@
 		ACEFCEC6228916B800A2582A /* TouchIDAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEC5228916B800A2582A /* TouchIDAuthentication.swift */; };
 		ACEFCEC822891A8A00A2582A /* MyProfileTouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEC722891A8A00A2582A /* MyProfileTouchID.swift */; };
 		ACEFCECA22891ACB00A2582A /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEC922891ACB00A2582A /* MyProfile.swift */; };
+		ACEFCECC22894C2F00A2582A /* HomePageInfoMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCECB22894C2F00A2582A /* HomePageInfoMore.swift */; };
 		CE8D9208B6A2691B5C40E734 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333498DF188C0FE90B08A34 /* Pods_NIBMConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		ACEFCEC5228916B800A2582A /* TouchIDAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDAuthentication.swift; sourceTree = "<group>"; };
 		ACEFCEC722891A8A00A2582A /* MyProfileTouchID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTouchID.swift; sourceTree = "<group>"; };
 		ACEFCEC922891ACB00A2582A /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
+		ACEFCECB22894C2F00A2582A /* HomePageInfoMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageInfoMore.swift; sourceTree = "<group>"; };
 		F6B650BBC485B3AB9774773E /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +169,7 @@
 				ACEFCEBF2288954F00A2582A /* Connect.swift */,
 				ACEFCEC322889A2900A2582A /* HomePage.swift */,
 				ACEFCEC722891A8A00A2582A /* MyProfileTouchID.swift */,
+				ACEFCECB22894C2F00A2582A /* HomePageInfoMore.swift */,
 			);
 			path = NIBMConnect;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			files = (
 				ACEFCEC822891A8A00A2582A /* MyProfileTouchID.swift in Sources */,
 				ACEFCEC22288965700A2582A /* ConnectModel.swift in Sources */,
+				ACEFCECC22894C2F00A2582A /* HomePageInfoMore.swift in Sources */,
 				ACEFCEA32287C97300A2582A /* MainViewController.swift in Sources */,
 				ACEFCEAF2287ED4D00A2582A /* SingUp.swift in Sources */,
 				ACEFCEC02288954F00A2582A /* Connect.swift in Sources */,
