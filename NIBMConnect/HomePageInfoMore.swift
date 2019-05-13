@@ -7,23 +7,34 @@
 //
 
 import UIKit
+import Kingfisher
 
 
 class HomePageInfoMore: UIViewController {
     
     var conncet : ConnectModel!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        //self.lblTital.text = conncet.FristName
-    }
+  
     
     
     
     @IBOutlet weak var ImgPicture: UIImageView!
     @IBOutlet weak var lblTital: UILabel!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        //self.lblTital.text = conncet.FristName
+        image()
+    }
+    
+    func image(){
+        //let Url = URL(string : conncet.ProfilePicture!)
+        //ImgPicture.kf.setImage(with : Url)
+        
+    }
     
     /*
     // MARK: - Navigation
