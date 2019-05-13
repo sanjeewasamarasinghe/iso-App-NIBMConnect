@@ -30,6 +30,7 @@
 		ACEFCEC02288954F00A2582A /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEBF2288954F00A2582A /* Connect.swift */; };
 		ACEFCEC22288965700A2582A /* ConnectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEC12288965700A2582A /* ConnectModel.swift */; };
 		ACEFCEC422889A2900A2582A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEC322889A2900A2582A /* HomePage.swift */; };
+		ACEFCEC6228916B800A2582A /* TouchIDAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEC5228916B800A2582A /* TouchIDAuthentication.swift */; };
 		CE8D9208B6A2691B5C40E734 /* Pods_NIBMConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333498DF188C0FE90B08A34 /* Pods_NIBMConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		ACEFCEBF2288954F00A2582A /* Connect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect.swift; sourceTree = "<group>"; };
 		ACEFCEC12288965700A2582A /* ConnectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectModel.swift; sourceTree = "<group>"; };
 		ACEFCEC322889A2900A2582A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		ACEFCEC5228916B800A2582A /* TouchIDAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDAuthentication.swift; sourceTree = "<group>"; };
 		F6B650BBC485B3AB9774773E /* Pods-NIBMConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBMConnect.release.xcconfig"; path = "Target Support Files/Pods-NIBMConnect/Pods-NIBMConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 				ACEFCEAC2287E44E00A2582A /* LogIn.swift */,
 				ACEFCEAE2287ED4D00A2582A /* SingUp.swift */,
 				ACEFCEB02287F28500A2582A /* SingIn.swift */,
+				ACEFCEC5228916B800A2582A /* TouchIDAuthentication.swift */,
 				ACEFCEB622883D7500A2582A /* MyProfile.storyboard */,
 				ACEFCEB822883E1300A2582A /* HomeWork.storyboard */,
 				ACEFCEBA2288416D00A2582A /* SingOut.storyboard */,
@@ -431,6 +434,7 @@
 				ACEFCEC422889A2900A2582A /* HomePage.swift in Sources */,
 				ACEFCEB12287F28500A2582A /* SingIn.swift in Sources */,
 				4BFA07122283D3A800956B86 /* AppDelegate.swift in Sources */,
+				ACEFCEC6228916B800A2582A /* TouchIDAuthentication.swift in Sources */,
 				ACEFCEB32287F74600A2582A /* AppTempData.swift in Sources */,
 				ACEFCEAD2287E44E00A2582A /* LogIn.swift in Sources */,
 			);

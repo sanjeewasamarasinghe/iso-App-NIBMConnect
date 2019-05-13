@@ -8,6 +8,8 @@
 
 import UIKit
 import FirebaseDatabase
+import Alamofire
+import AlamofireImage
 
 class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,6 +25,19 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         
         Cell.lblFristName.text = Detail.FristName
         Cell.lblLastName.text = Detail.LastName
+        Cell.lblCity.text = Detail.City
+        
+        Alamofire.request(Detail.ProfilePicture!).responseImage(completionHandler:{(response)in
+            print(response)
+            
+            if let imgD = response.result.value{
+                print("image downloaded:\(imgD)")
+                Cell.personImg.image=imgD
+            }else{
+                print("error")
+            }
+            
+        })
         
         return Cell
         
@@ -79,6 +94,10 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
             
         })
         
+    }
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300.0
     }
     
     /*

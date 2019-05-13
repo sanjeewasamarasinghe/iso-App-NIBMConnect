@@ -17,6 +17,8 @@ class Connect: UITableViewCell {
 
     @IBOutlet weak var lblFristName: UILabel!
     @IBOutlet weak var lblLastName: UILabel!
+    @IBOutlet weak var personImg: UIImageView!
+    @IBOutlet weak var lblCity: UILabel!
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
