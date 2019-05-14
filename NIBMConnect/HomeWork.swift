@@ -10,7 +10,7 @@ import UIKit
 
 class HomeWork: UIViewController {
 
-    var txtList = String()
+    var txtList = [String]()
     
     @IBOutlet weak var txtAddHomeWork: UITextField!
     override func viewDidLoad() {
@@ -81,12 +81,32 @@ class HomeWork: UIViewController {
         
         let homeWork = self.txtAddHomeWork.text
         
-        let writeTxt = readStringProject+(text)+homeWork!
+        
         
         //let dataObject = homeWork
         //let dataOject = TxtHomeWorkModel (HomeWORK:HomeWork as! String?)
         
-        txtList = homeWork!
+        txtList.append(homeWork!)
+        
+        var writeTxt = ""
+        
+        if(String(txtList.count) == "0"){
+        writeTxt = readStringProject+(text)
+        }else if(String(txtList.count) == "1"){
+          writeTxt = readStringProject+(text)+txtList[0]
+        }
+        else if(String(txtList.count) == "2"){
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]
+        }else if(String(txtList.count) == "3"){
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]
+        }else if(String(txtList.count) == "1"){
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]
+        }else if(String(txtList.count) == "1"){
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]+" "+txtList[4]
+        }else{
+            
+        }
+        
         
         do{
             //write to the file

@@ -10,7 +10,7 @@ import UIKit
 
 class HomeWorkDetails: UIViewController {
     
-    var model : String?
+    var model = [String]()
 
     @IBOutlet weak var txtHomeWorkView: UITextView!
     override func viewDidLoad() {
@@ -36,7 +36,45 @@ class HomeWorkDetails: UIViewController {
             print(errro)
         }
         print(readStringProject)
-        self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + model!  + " "
+        
+        var addText = ""
+        
+        //for txt in model.count{
+            //addText = addText + "\r\n\r\n " + addText
+        //}
+        
+        //var i=0;
+        //while i <= model.count {
+            //addText = addText + "\r\n\r\n " + model[i]
+            
+        //}
+        
+        if(String(model.count) == "0"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count)
+        }else if(String(model.count) == "1"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count)+" "+model[0]
+        }else if(String(model.count) == "2"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count)+" "+model[0]+" "+model[1]
+        }else if(String(model.count) == "3"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count)+" "+model[0]+" "+model[1]+" "+model[2]
+        }else if(String(model.count) == "4"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+        }else if(String(model.count) == "5"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+        }else if(String(model.count) == "6"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+        }else if(String(model.count) == "7"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+        }else if(String(model.count) == "8"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+        }else if(String(model.count) == "9"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+        }else {
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+        }
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
