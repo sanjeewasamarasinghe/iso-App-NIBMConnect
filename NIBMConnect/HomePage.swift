@@ -43,7 +43,12 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? HomePageInfoMore {
+            destination.Person = connectList[(tblConnect.indexPathForSelectedRow?.row)! ]
+        }
+    }
 
     
     @IBOutlet weak var tblConnect: UITableView!

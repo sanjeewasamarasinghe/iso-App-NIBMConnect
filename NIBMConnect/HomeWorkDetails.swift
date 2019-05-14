@@ -1,39 +1,22 @@
 //
-//  HomePageInfoMore.swift
+//  HomeWorkDetails.swift
 //  NIBMConnect
 //
-//  Created by Guest User on 5/13/19.
+//  Created by Guest User on 5/14/19.
 //  Copyright © 2019 USER. All rights reserved.
 //
 
 import UIKit
-import Kingfisher
 
+class HomeWorkDetails: UIViewController {
 
-class HomePageInfoMore: UIViewController {
-    
-    var Person : ConnectModel?
-
-  
-    
-    
-    
-    @IBOutlet weak var ImgPicture: UIImageView!
-    @IBOutlet weak var lblTital: UILabel!
-    
-    
     override func viewDidLoad() {
-    super.viewDidLoad()
-        
+        super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-        self.lblTital.text = Person?.FristName
-        image()
     }
     
-    func image(){
-        let Url = URL(string : (Person?.ProfilePicture!)!)
-        ImgPicture.kf.setImage(with : Url)
-        
+    @IBAction func HomeWorkDetails(_ sender: Any) {
     }
     
     /*

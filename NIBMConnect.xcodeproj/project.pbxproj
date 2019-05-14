@@ -14,6 +14,9 @@
 		4BFA071C2283D3B000956B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFA071A2283D3B000956B86 /* LaunchScreen.storyboard */; };
 		4BFA07272283D3B100956B86 /* NIBMConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA07262283D3B100956B86 /* NIBMConnectTests.swift */; };
 		4BFA07322283D3B100956B86 /* NIBMConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA07312283D3B100956B86 /* NIBMConnectUITests.swift */; };
+		ACDC42F4228A71B200735C78 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC42F3228A71B200735C78 /* HomeWork.swift */; };
+		ACDC42F6228A81C900735C78 /* HomeWorkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */; };
+		ACDC42F8228A8B8B00735C78 /* HomeWork.txt in Resources */ = {isa = PBXBuildFile; fileRef = ACDC42F7228A8B8B00735C78 /* HomeWork.txt */; };
 		ACEFCEA32287C97300A2582A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEA22287C97300A2582A /* MainViewController.swift */; };
 		ACEFCEA52287CA1C00A2582A /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */; };
 		ACEFCEA72287D28800A2582A /* SingIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA62287D28800A2582A /* SingIn.storyboard */; };
@@ -70,6 +73,9 @@
 		4BFA072D2283D3B100956B86 /* NIBMConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NIBMConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFA07312283D3B100956B86 /* NIBMConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBMConnectUITests.swift; sourceTree = "<group>"; };
 		4BFA07332283D3B100956B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDC42F3228A71B200735C78 /* HomeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
+		ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkDetails.swift; sourceTree = "<group>"; };
+		ACDC42F7228A8B8B00735C78 /* HomeWork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HomeWork.txt; sourceTree = "<group>"; };
 		ACEFCEA22287C97300A2582A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		ACEFCEA62287D28800A2582A /* SingIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingIn.storyboard; sourceTree = "<group>"; };
@@ -163,6 +169,8 @@
 				ACEFCEB622883D7500A2582A /* MyProfile.storyboard */,
 				ACEFCEC922891ACB00A2582A /* MyProfile.swift */,
 				ACEFCEB822883E1300A2582A /* HomeWork.storyboard */,
+				ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */,
+				ACDC42F3228A71B200735C78 /* HomeWork.swift */,
 				ACEFCEBA2288416D00A2582A /* SingOut.storyboard */,
 				ACEFCEBD228841EB00A2582A /* HomePage.storyboard */,
 				ACEFCEC12288965700A2582A /* ConnectModel.swift */,
@@ -170,6 +178,7 @@
 				ACEFCEC322889A2900A2582A /* HomePage.swift */,
 				ACEFCEC722891A8A00A2582A /* MyProfileTouchID.swift */,
 				ACEFCECB22894C2F00A2582A /* HomePageInfoMore.swift */,
+				ACDC42F7228A8B8B00735C78 /* HomeWork.txt */,
 			);
 			path = NIBMConnect;
 			sourceTree = "<group>";
@@ -323,6 +332,7 @@
 				ACEFCEBE228841EB00A2582A /* HomePage.storyboard in Resources */,
 				ACEFCEB722883D7500A2582A /* MyProfile.storyboard in Resources */,
 				ACEFCEA52287CA1C00A2582A /* LogIn.storyboard in Resources */,
+				ACDC42F8228A8B8B00735C78 /* HomeWork.txt in Resources */,
 				4BFA071C2283D3B000956B86 /* LaunchScreen.storyboard in Resources */,
 				4BFA07192283D3B000956B86 /* Assets.xcassets in Resources */,
 				4BFA07172283D3A800956B86 /* Main.storyboard in Resources */,
@@ -439,7 +449,9 @@
 			files = (
 				ACEFCEC822891A8A00A2582A /* MyProfileTouchID.swift in Sources */,
 				ACEFCEC22288965700A2582A /* ConnectModel.swift in Sources */,
+				ACDC42F6228A81C900735C78 /* HomeWorkDetails.swift in Sources */,
 				ACEFCECC22894C2F00A2582A /* HomePageInfoMore.swift in Sources */,
+				ACDC42F4228A71B200735C78 /* HomeWork.swift in Sources */,
 				ACEFCEA32287C97300A2582A /* MainViewController.swift in Sources */,
 				ACEFCEAF2287ED4D00A2582A /* SingUp.swift in Sources */,
 				ACEFCEC02288954F00A2582A /* Connect.swift in Sources */,
