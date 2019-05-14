@@ -22,12 +22,37 @@ class LogIn: UIViewController {
     }
     
     @IBAction func resetBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+       
+        Auth.auth().sendPasswordReset(withEmail: self.txtEmail.text!){error in
+            if error != nil {
+                let alert = UIAlertController(title: "Reset Password ", message: error?.localizedDescription, preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title:"Click",style:.default,handler:nil))
+        
+                self.present(alert, animated: true, completion: nil)
+                
+                
+                
+                
+                
+            }else{
+                
+                Auth.auth().currentUser?.updatePassword(to: "1234"){(error) in
+                    
+                    let alert = UIAlertController(title: "Update password ", message: error?.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title:"Click",style:.default,handler:nil))
+                }
+                
+                
+            }
+        }
     }
-    @IBAction func forGetPassWord(_ sender: Any) {
-    }
+   
     @IBAction func btnBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        
+       
+         self.dismiss(animated: true, completion: nil)
+       
     }
     @IBAction func btnSingUp(_ sender: Any) {
         self.performSegue(withIdentifier: "SingUpOut", sender: nil)
