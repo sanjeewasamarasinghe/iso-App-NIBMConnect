@@ -9,14 +9,35 @@
 import UIKit
 
 class HomeWorkDetails: UIViewController {
+    
+    var model : String?
 
+    @IBOutlet weak var txtHomeWorkView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+         self.txtHomeWorkView.text = ""
+        homwWorkAdd()
+       
     }
     
-    @IBAction func HomeWorkDetails(_ sender: Any) {
+    public func homwWorkAdd(){
+        let fileUrlProject = Bundle.main.path(forResource: "HomeWork", ofType: "txt")
+        
+        //let fileNameWrite = "HomeWork"
+        //let path = NSURL (fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileNameWrite)
+        
+        //let writFileURL = "/Users/Guest/Desktop/nibm/NIBMConnect/HomeWork.txt"
+        
+        var readStringProject = ""
+        do{
+            readStringProject = try String(contentsOfFile: fileUrlProject!,encoding: String.Encoding.utf8)
+        }catch let errro as NSError{
+            print("Failed to read from project")
+            print(errro)
+        }
+        print(readStringProject)
+        self.txtHomeWorkView.text = readStringProject + model! ?? ""
+        // Do any additional setup after loading the view.
     }
     
     /*

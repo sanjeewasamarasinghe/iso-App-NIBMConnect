@@ -10,6 +10,8 @@ import UIKit
 
 class HomeWork: UIViewController {
 
+    var txtList = String()
+    
     @IBOutlet weak var txtAddHomeWork: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,14 @@ class HomeWork: UIViewController {
     @IBAction func btnNextPage(_ sender: Any) {
     self.performSegue(withIdentifier: "HomeWork", sender: nil)
     }
- 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? HomeWorkDetails {
+            destination.model = txtList
+        }
+    }
+    
     @IBAction func btnText(_ sender: Any) {
         txtfile()
     }
@@ -67,8 +76,17 @@ class HomeWork: UIViewController {
             print(errro)
         }
         print(readStringProject)
+        let text = " ** "
         
-        let writeTxt = "line 1"
+        let homeWork = self.txtAddHomeWork.text
+        
+        let writeTxt = "\(readStringProject)\(text)\(homeWork)"
+        
+        //let dataObject = homeWork
+        //let dataOject = TxtHomeWorkModel (HomeWORK:HomeWork as! String?)
+        
+        txtList = homeWork!
+        
         do{
             //write to the file
            try writeTxt.write(toFile :writFileURL , atomically: false, encoding: String.Encoding.utf8)
@@ -85,7 +103,8 @@ class HomeWork: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
+        // Get the new view controlle
+     r using segue.destination.
         // Pass the selected object to the new view controller.
     }
     */
