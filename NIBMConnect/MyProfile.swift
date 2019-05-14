@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import Kingfisher
+
 
 class MyProfile: UIViewController {
 
@@ -59,6 +61,8 @@ class MyProfile: UIViewController {
                     self.connectList.append(DataOject)
                 }
                 let  user = Auth.auth().currentUser
+               
+               
                 self.fristName.text=user?.email
                 var count = String(self.connectList.count)
                 var Object :ConnectModel!
@@ -76,8 +80,10 @@ class MyProfile: UIViewController {
                 let ob = self.connectList.first{$0.Email==user?.email}
                 if ((ob) != nil){
                 Object=ob
-                    
-                self.lastName.text=Object.Email
+                self.fristName.text=Object.FristName
+                self.lastName.text=Object.LastName
+                    let Url = URL(string : (Object.ProfilePicture)!)
+                    self.profilrPic.kf.setImage(with : Url)
                 
                 }else{
                 self.lastName.text="n"
@@ -88,12 +94,6 @@ class MyProfile: UIViewController {
         ref.observe(DataEventType.value, with: {(snapshot)in
             
         })
-        let  user = Auth.auth().currentUser
-        self.fristName.text=user?.email
-        
-      
-        
-       
     }
    
     
