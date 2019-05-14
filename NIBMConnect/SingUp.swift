@@ -21,6 +21,9 @@ class SingUp: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func btnBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func btnSingIn(_ sender: Any) {
         Auth.auth().createUser(withEmail: self.txtEmail.text!, password: self.txtPassword.text! ){
             (user,error)in

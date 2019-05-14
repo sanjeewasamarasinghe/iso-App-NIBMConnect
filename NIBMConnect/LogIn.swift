@@ -21,6 +21,11 @@ class LogIn: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func resetBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func forGetPassWord(_ sender: Any) {
+    }
     @IBAction func btnBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

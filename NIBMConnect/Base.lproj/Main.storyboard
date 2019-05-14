@@ -18,20 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Db-R1-N1k">
-                                <rect key="frame" x="142" y="125" width="90" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LogIN &gt;&gt;"/>
-                                <connections>
-                                    <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1o-6N-eEF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c98-CG-kq5">
-                                <rect key="frame" x="153" y="242" width="68" height="30"/>
+                                <rect key="frame" x="45" y="43" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SingInOut"/>
+                                <state key="normal" title="&lt;&lt;--"/>
                                 <connections>
                                     <action selector="singInOutBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztW-1N-YoV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Db-R1-N1k">
+                                <rect key="frame" x="277" y="35" width="90" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="--&gt;&gt;"/>
+                                <connections>
+                                    <action selector="showNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1o-6N-eEF"/>
                                 </connections>
                             </button>
                         </subviews>
