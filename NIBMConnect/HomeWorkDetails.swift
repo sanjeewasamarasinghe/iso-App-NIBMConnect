@@ -36,7 +36,7 @@ class HomeWorkDetails: UIViewController {
             print(errro)
         }
         print(readStringProject)
-        self.txtHomeWorkView.text = readStringProject + model! ?? ""
+        self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + model!  + " "
         // Do any additional setup after loading the view.
     }
     

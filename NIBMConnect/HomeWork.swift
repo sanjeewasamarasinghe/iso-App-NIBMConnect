@@ -32,6 +32,7 @@ class HomeWork: UIViewController {
     
     @IBAction func btnText(_ sender: Any) {
         txtfile()
+        self.txtAddHomeWork.text=""
     }
     
     
@@ -76,11 +77,11 @@ class HomeWork: UIViewController {
             print(errro)
         }
         print(readStringProject)
-        let text = " ** "
+        let text = "\r\n\r\n"
         
         let homeWork = self.txtAddHomeWork.text
         
-        let writeTxt = "\(readStringProject)\(text)\(homeWork)"
+        let writeTxt = readStringProject+(text)+homeWork!
         
         //let dataObject = homeWork
         //let dataOject = TxtHomeWorkModel (HomeWORK:HomeWork as! String?)
