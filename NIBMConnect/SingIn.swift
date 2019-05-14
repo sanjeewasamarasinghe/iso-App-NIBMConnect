@@ -18,6 +18,9 @@ class SingIn: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func resetPassword(_ sender: Any) {
+        self.performSegue(withIdentifier: "Reset", sender: nil)
+    }
     @IBAction func btnSingOutTwo(_ sender: Any) {
         let firebaseAuth = Auth.auth()
         do{

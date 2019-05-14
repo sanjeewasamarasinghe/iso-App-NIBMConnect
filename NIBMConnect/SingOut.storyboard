@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gOz-6p-WqH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SFc-j0-oLP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--SING OUT-->
+        <!--Sing In-->
         <scene sceneID="JHU-k9-saH">
             <objects>
                 <viewController id="gOz-6p-WqH" customClass="SingIn" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,16 +30,61 @@
                                     <action selector="btnSingOutTwo:" destination="gOz-6p-WqH" eventType="touchUpInside" id="AB5-nJ-c5L"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ez-ce-366">
+                                <rect key="frame" x="97" y="597" width="184" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset Email &amp; Password"/>
+                                <connections>
+                                    <action selector="resetPassword:" destination="gOz-6p-WqH" eventType="touchUpInside" id="eJi-7a-fyS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WPb-CP-aUa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SING OUT" image="icons8-export-24" id="cdn-Yd-naB"/>
+                    <navigationItem key="navigationItem" id="iq4-LA-YGK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="OUY-yp-mqB" kind="show" identifier="Reset" id="4rH-A2-GwA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLf-y1-J3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-298.39999999999998" y="77.811094452773617"/>
+            <point key="canvasLocation" x="-863.20000000000005" y="106.59670164917542"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fe8-dB-SUE">
+            <objects>
+                <viewController id="OUY-yp-mqB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="btF-sn-f1x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rPw-Re-9wq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfo-pX-6VZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="107"/>
+        </scene>
+        <!--SING OUT-->
+        <scene sceneID="kr1-CA-K9n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SFc-j0-oLP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SING OUT" image="icons8-export-24" id="cdn-Yd-naB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wjY-sU-Ndu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gOz-6p-WqH" kind="relationship" relationship="rootViewController" id="tFn-sc-rgP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PX2-pg-gDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1622" y="107"/>
         </scene>
     </scenes>
     <resources>

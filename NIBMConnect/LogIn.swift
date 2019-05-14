@@ -37,14 +37,11 @@ class LogIn: UIViewController {
                 
             }else{
                 
-                Auth.auth().currentUser?.updatePassword(to: "1234"){(error) in
-                    
-                    let alert = UIAlertController(title: "Update password ", message: error?.localizedDescription, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title:"Click",style:.default,handler:nil))
-                }
-                
+                self.dismiss(animated: true, completion: nil)
+            
                 
             }
+            
         }
     }
    
