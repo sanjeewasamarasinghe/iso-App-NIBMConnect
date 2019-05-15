@@ -38,7 +38,12 @@ class HomeWork: UIViewController {
     @IBAction func btnText(_ sender: Any) {
         txtfile()
         self.txtAddHomeWork.text=""
-        self.countLable.text = String(txtList.count)+" NOTE"
+        if(txtList.count==10){
+            self.countLable.text = "FULL"+" NOTE"
+        }else{
+            self.countLable.text = String(txtList.count)+" NOTE"
+        }
+        
     }
     
     
@@ -83,7 +88,8 @@ class HomeWork: UIViewController {
             print(errro)
         }
         print(readStringProject)
-        let text = "\r\n\r\n"
+        let NoteCount = String(txtList.count + 1 )
+        let text = " \r\n\r\n \(NoteCount) NOTES - "
         
         let homeWork = self.txtAddHomeWork.text
         
@@ -97,20 +103,30 @@ class HomeWork: UIViewController {
         var writeTxt = ""
         
         if(String(txtList.count) == "0"){
-        writeTxt = readStringProject+(text)
+        writeTxt = readStringProject+" NOTES "
         }else if(String(txtList.count) == "1"){
-          writeTxt = readStringProject+(text)+txtList[0]
+          writeTxt = readStringProject+text+txtList[0]
         }
         else if(String(txtList.count) == "2"){
             writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]
         }else if(String(txtList.count) == "3"){
             writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]
-        }else if(String(txtList.count) == "1"){
+        }else if(String(txtList.count) == "4"){
             writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]
-        }else if(String(txtList.count) == "1"){
+        }else if(String(txtList.count) == "5"){
             writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]+" "+txtList[4]
+        }else if(String(txtList.count) == "6"){
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]+" "+txtList[4]+" "+txtList[5]
+        }else if(String(txtList.count) == "7"){
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]+" "+txtList[4]+" "+txtList[5]+" "+txtList[6]
+        }else if(String(txtList.count) == "8"){
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]+" "+txtList[4]+" "+txtList[5]+" "+txtList[6]+" "+txtList[7]
+        }else if(String(txtList.count) == "9"){
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]+" "+txtList[4]+" "+txtList[5]+" "+txtList[6]+" "+txtList[7]+" "+txtList[8]
+        }else if(String(txtList.count) == "10"){
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]+" "+txtList[4]+" "+txtList[5]+" "+txtList[6]+" "+txtList[7]+" "+txtList[8]+" "+txtList[9]
         }else{
-            
+            writeTxt = readStringProject+(text)+txtList[0]+" "+txtList[1]+" "+txtList[2]+" "+txtList[3]+" "+txtList[4]+" "+txtList[5]+" "+txtList[6]+" "+txtList[7]+" "+txtList[8]+" "+txtList[9]
         }
         
         

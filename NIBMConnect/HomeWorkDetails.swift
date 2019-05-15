@@ -50,27 +50,37 @@ class HomeWorkDetails: UIViewController {
         //}
         
         if(String(model.count) == "0"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count)
+            self.txtHomeWorkView.text = readStringProject+"\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) "
         }else if(String(model.count) == "1"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count)+" "+model[0]
+            self.txtHomeWorkView.text = readStringProject+"\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) "+" "+model[0]
         }else if(String(model.count) == "2"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count)+" "+model[0]+" "+model[1]
+            self.txtHomeWorkView.text = readStringProject+"\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) "+" "+model[0]+" "+model[1]
         }else if(String(model.count) == "3"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count)+" "+model[0]+" "+model[1]+" "+model[2]
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) "+" "+model[0]+" "+model[1]+" "+model[2]
         }else if(String(model.count) == "4"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) " + model[0]+" "+model[1]+" "+model[2]+" "+model[3]
+            
         }else if(String(model.count) == "5"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) " + model[0]+" "+model[1]+" "+model[2]+" "+model[3]+" "+model[4]
+            
         }else if(String(model.count) == "6"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) " + model[0]+" "+model[1]+" "+model[2]+" "+model[3]+" "+model[4]+" "+model[5]
+            
         }else if(String(model.count) == "7"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) " + model[0]+" "+model[1]+" "+model[2]+" "+model[3]+" "+model[4]+" "+model[5]+" "+model[6]
+            
         }else if(String(model.count) == "8"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) " + model[0]+" "+model[1]+" "+model[2]+" "+model[3]+" "+model[4]+" "+model[5]+" "+model[6]+" "+model[7]
+            
         }else if(String(model.count) == "9"){
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) " + model[0]+" "+model[1]+" "+model[2]+" "+model[3]+" "+model[4]+" "+model[5]+" "+model[6]+" "+model[7]+" "+model[8]
+            
+        }else if(String(model.count) == "10"){
+            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) " + model[0]+" "+model[1]+" "+model[2]+" "+model[3]+" "+model[4]+" "+model[5]+" "+model[6]+" "+model[7]+" "+model[8]+" "+model[9]
+            
         }else {
-            self.txtHomeWorkView.text = readStringProject + "\r\n\r\n " + String(model.count) + model[0]
+           self.txtHomeWorkView.text = readStringProject + "\r\n\r\n NEW NOTES -"+" ( "+String(model.count)+" ) " + model[0]+" "+model[1]+" "+model[2]+" "+model[3]+" "+model[4]+" "+model[5]+" "+model[6]+" "+model[7]+" "+model[8]+" "+model[9]
+            
         }
         
         
