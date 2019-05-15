@@ -28,11 +28,12 @@ class ResetEmail_PassWord: UIViewController {
     @IBAction func btnReset(_ sender: Any) {
         
         var newPassword = self.newNewPassWord.text
+        var curresntPassword = self.txtPassword.text
         
         let user = Auth.auth().currentUser
         var credential : AuthCredential
         
-        credential = EmailAuthProvider.credential(withEmail: (user?.email)!, password: (user?.uid)!)
+        credential = EmailAuthProvider.credential(withEmail: (user?.email)!, password: curresntPassword!)
         
         
         // Prompt the user to re-provide their sign-in credentials
