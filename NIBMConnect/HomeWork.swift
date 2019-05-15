@@ -46,6 +46,9 @@ class HomeWork: UIViewController {
         
     }
     
+    public func shoeActivity (){
+        //self.view.bringSubviewToFront()
+    }
     
     public func txtfile(){
         let fileName = "Text"

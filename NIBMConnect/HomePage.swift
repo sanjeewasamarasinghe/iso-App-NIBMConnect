@@ -15,6 +15,19 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return connectList.count
     }
+   
+    
+    @IBOutlet weak var activiyInd: UIActivityIndicatorView!
+    
+    func showActivity(){
+        self.view.bringSubviewToFront(self.activiyInd)
+        self.activiyInd.startAnimating()
+    }
+    
+    func  hideActivity(){
+        self.view.sendSubviewToBack(self.activiyInd)
+        self.activiyInd.stopAnimating()
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for:indexPath)as! Connect
@@ -58,8 +71,9 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     
     
     override func viewDidLoad() {
+        self.activiyInd.hidesWhenStopped=true
         super.viewDidLoad()
-        
+        self.showActivity()
         // Do any additional setup after loading the view.
         ref = Database.database().reference()
         
@@ -91,7 +105,9 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
                                            FBProfileUrl:FBProfileUrl as! String?)
                     self.connectList.append(DataOject)
                 }
+                self.hideActivity()
                 self.tblConnect.reloadData()
+                
             }
         })
         
