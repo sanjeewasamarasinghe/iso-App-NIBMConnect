@@ -17,6 +17,7 @@
 		ACDC42F4228A71B200735C78 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC42F3228A71B200735C78 /* HomeWork.swift */; };
 		ACDC42F6228A81C900735C78 /* HomeWorkDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */; };
 		ACDC42F8228A8B8B00735C78 /* HomeWork.txt in Resources */ = {isa = PBXBuildFile; fileRef = ACDC42F7228A8B8B00735C78 /* HomeWork.txt */; };
+		ACDC42FC228BB2F500735C78 /* ResetEmail&PassWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC42FB228BB2F500735C78 /* ResetEmail&PassWord.swift */; };
 		ACEFCEA32287C97300A2582A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFCEA22287C97300A2582A /* MainViewController.swift */; };
 		ACEFCEA52287CA1C00A2582A /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */; };
 		ACEFCEA72287D28800A2582A /* SingIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEFCEA62287D28800A2582A /* SingIn.storyboard */; };
@@ -76,6 +77,7 @@
 		ACDC42F3228A71B200735C78 /* HomeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
 		ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkDetails.swift; sourceTree = "<group>"; };
 		ACDC42F7228A8B8B00735C78 /* HomeWork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HomeWork.txt; sourceTree = "<group>"; };
+		ACDC42FB228BB2F500735C78 /* ResetEmail&PassWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResetEmail&PassWord.swift"; sourceTree = "<group>"; };
 		ACEFCEA22287C97300A2582A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		ACEFCEA62287D28800A2582A /* SingIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingIn.storyboard; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */,
 				ACDC42F3228A71B200735C78 /* HomeWork.swift */,
 				ACEFCEBA2288416D00A2582A /* SingOut.storyboard */,
+				ACDC42FB228BB2F500735C78 /* ResetEmail&PassWord.swift */,
 				ACEFCEBD228841EB00A2582A /* HomePage.storyboard */,
 				ACEFCEC12288965700A2582A /* ConnectModel.swift */,
 				ACEFCEBF2288954F00A2582A /* Connect.swift */,
@@ -448,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACEFCEC822891A8A00A2582A /* MyProfileTouchID.swift in Sources */,
+				ACDC42FC228BB2F500735C78 /* ResetEmail&PassWord.swift in Sources */,
 				ACEFCEC22288965700A2582A /* ConnectModel.swift in Sources */,
 				ACDC42F6228A81C900735C78 /* HomeWorkDetails.swift in Sources */,
 				ACEFCECC22894C2F00A2582A /* HomePageInfoMore.swift in Sources */,

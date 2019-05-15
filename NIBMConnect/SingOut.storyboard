@@ -51,22 +51,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLf-y1-J3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-863.20000000000005" y="106.59670164917542"/>
+            <point key="canvasLocation" x="-1596" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--Reset Email & Password -->
         <scene sceneID="fe8-dB-SUE">
             <objects>
-                <viewController id="OUY-yp-mqB" sceneMemberID="viewController">
+                <viewController title="Reset Email &amp; Password " id="OUY-yp-mqB" customClass="ResetEmail_PassWord" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="btF-sn-f1x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q7w-x9-aen">
+                                <rect key="frame" x="46" y="203" width="289" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Current Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Xo-lp-d4w">
+                                <rect key="frame" x="46" y="129" width="289" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YY1-pK-U8Q">
+                                <rect key="frame" x="46" y="280" width="289" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkV-cD-Oyd">
+                                <rect key="frame" x="125" y="377" width="123" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20470973170000001" green="0.3890410634" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnReset:" destination="OUY-yp-mqB" eventType="touchUpInside" id="DnH-Mg-16d"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rPw-Re-9wq"/>
                     </view>
+                    <connections>
+                        <outlet property="Change" destination="vkV-cD-Oyd" id="fQI-ha-DHr"/>
+                        <outlet property="newNewPassWord" destination="YY1-pK-U8Q" id="wfe-p2-5vB"/>
+                        <outlet property="txEmail" destination="Q7w-x9-aen" id="AHb-Pe-HLU"/>
+                        <outlet property="txtPassword" destination="4Xo-lp-d4w" id="hN8-ZW-j4O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfo-pX-6VZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-105" y="107"/>
+            <point key="canvasLocation" x="-823.20000000000005" y="115.59220389805098"/>
         </scene>
         <!--SING OUT-->
         <scene sceneID="kr1-CA-K9n">
@@ -85,7 +126,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PX2-pg-gDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1622" y="107"/>
+            <point key="canvasLocation" x="-2313" y="116"/>
         </scene>
     </scenes>
     <resources>
