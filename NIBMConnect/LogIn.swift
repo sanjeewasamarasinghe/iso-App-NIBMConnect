@@ -22,7 +22,7 @@ class LogIn: UIViewController {
     }
     
     @IBAction func resetBtn(_ sender: Any) {
-       
+        
         Auth.auth().sendPasswordReset(withEmail: self.txtEmail.text!){error in
             if error != nil {
                 let alert = UIAlertController(title: "Reset Password ", message: error?.localizedDescription, preferredStyle: .alert)
@@ -31,12 +31,19 @@ class LogIn: UIViewController {
         
                 self.present(alert, animated: true, completion: nil)
                 
-                
-                
-                
-                
+
             }else{
-                
+                Auth.auth().currentUser?.sendEmailVerification { (error) in
+                    if error != nil {
+                        let alert = UIAlertController(title: "Reset Password ", message: error?.localizedDescription, preferredStyle: .alert)
+                        
+                        alert.addAction(UIAlertAction(title:"Click",style:.default,handler:nil))
+                        
+                        self.present(alert, animated: true, completion: nil)
+                    }else{
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                }
                 self.dismiss(animated: true, completion: nil)
             
                 

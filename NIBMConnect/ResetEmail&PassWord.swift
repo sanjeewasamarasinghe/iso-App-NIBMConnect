@@ -29,6 +29,7 @@ class ResetEmail_PassWord: UIViewController {
         
         var newPassword = self.newNewPassWord.text
         var curresntPassword = self.txtPassword.text
+        var NewEmail = self.txEmail.text
         
         let user = Auth.auth().currentUser
         var credential : AuthCredential
@@ -61,6 +62,21 @@ class ResetEmail_PassWord: UIViewController {
                         self.dismiss(animated: true, completion: nil)
                     }
                     
+                }
+                
+                //new email
+                Auth.auth().currentUser?.updateEmail(to: NewEmail!) { (error) in
+                    // ...
+                    if error != nil {
+                        let alert = UIAlertController(title: "Reset Email", message: error?.localizedDescription, preferredStyle: .alert)
+                        
+                        alert.addAction(UIAlertAction(title:"Click",style:.default,handler:nil))
+                        
+                        self.present(alert, animated: true, completion: nil)
+                        
+                    }else{
+                        self.dismiss(animated: true, completion: nil)
+                    }
                 }
             }
         }

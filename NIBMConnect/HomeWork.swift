@@ -18,6 +18,7 @@ class HomeWork: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var countLable: UILabel!
     
     @IBAction func btnNextPage(_ sender: Any) {
     self.performSegue(withIdentifier: "HomeWork", sender: nil)

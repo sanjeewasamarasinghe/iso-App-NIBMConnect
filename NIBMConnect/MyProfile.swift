@@ -87,6 +87,7 @@ class MyProfile: UIViewController {
                 
                 }else{
                 self.lastName.text="n"
+                    //enter alert
                 }
             }
         })
