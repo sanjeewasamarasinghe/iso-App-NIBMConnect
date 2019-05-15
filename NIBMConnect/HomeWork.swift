@@ -12,6 +12,8 @@ class HomeWork: UIViewController {
 
     var txtList = [String]()
     
+    
+    
     @IBOutlet weak var txtAddHomeWork: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,8 @@ class HomeWork: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var countLable: UILabel!
+    
+    
     
     @IBAction func btnNextPage(_ sender: Any) {
     self.performSegue(withIdentifier: "HomeWork", sender: nil)
@@ -34,6 +38,7 @@ class HomeWork: UIViewController {
     @IBAction func btnText(_ sender: Any) {
         txtfile()
         self.txtAddHomeWork.text=""
+        self.countLable.text = String(txtList.count)+" NOTE"
     }
     
     
