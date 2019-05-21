@@ -18,10 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="125917" translatesAutoresizingMaskIntoConstraints="NO" id="T5p-hd-ldu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NIBM CONTENT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNX-W9-QlK">
                                 <rect key="frame" x="99" y="138" width="189" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" red="0.2484970843" green="0.2187898871" blue="0.93628562179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xkq4c3-1" translatesAutoresizingMaskIntoConstraints="NO" id="v5v-do-wC6">
@@ -30,6 +34,12 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T5p-hd-ldu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="CSk-NQ-QAE"/>
+                            <constraint firstItem="T5p-hd-ldu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="EDp-DB-vSi"/>
+                            <constraint firstItem="T5p-hd-ldu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iy4-mI-1WD"/>
+                            <constraint firstItem="T5p-hd-ldu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ohr-i9-QGz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -39,6 +49,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="125917" width="320" height="568"/>
         <image name="xkq4c3-1" width="512" height="384"/>
     </resources>
 </document>

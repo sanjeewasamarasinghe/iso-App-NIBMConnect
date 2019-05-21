@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="125917" translatesAutoresizingMaskIntoConstraints="NO" id="xY5-qf-Om8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Db-R1-N1k">
                                 <rect key="frame" x="277" y="35" width="90" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,12 +44,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2019-05-14 at 4.05.04 PM" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-qS-j22">
-                                <rect key="frame" x="14" y="177" width="351" height="314"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2019-05-14 at 4.05.04 PM" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-qS-j22">
+                                <rect key="frame" x="11" y="141" width="356" height="372"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xY5-qf-Om8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C6T-km-LaU"/>
+                            <constraint firstItem="xY5-qf-Om8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Iiz-Dr-WHe"/>
+                            <constraint firstItem="zQP-qS-j22" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctb-h6-jfo"/>
+                            <constraint firstItem="zQP-qS-j22" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dJs-Ul-eHc"/>
+                            <constraint firstItem="xY5-qf-Om8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sFk-Uy-paG"/>
+                            <constraint firstItem="xY5-qf-Om8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="waN-n0-7Nt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -77,6 +87,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="125917" width="320" height="568"/>
         <image name="Screen Shot 2019-05-14 at 4.05.04 PM" width="511" height="513"/>
     </resources>
 </document>
