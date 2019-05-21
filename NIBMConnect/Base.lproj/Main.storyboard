@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2019-05-14 at 4.05.04 PM" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-qS-j22">
-                                <rect key="frame" x="11" y="141" width="356" height="372"/>
+                                <rect key="frame" x="23" y="182" width="328" height="303"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
