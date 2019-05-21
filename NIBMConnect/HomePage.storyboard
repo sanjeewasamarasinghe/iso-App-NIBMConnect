@@ -76,7 +76,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="EWi-8i-6Kt" firstAttribute="leading" secondItem="Yr9-7g-lkR" secondAttribute="leading" id="4xf-4G-dM9"/>
                             <constraint firstItem="EWi-8i-6Kt" firstAttribute="trailing" secondItem="Yr9-7g-lkR" secondAttribute="trailing" id="dfj-TW-i9s"/>
@@ -101,7 +101,7 @@
         <scene sceneID="o4F-0q-rYg">
             <objects>
                 <viewController id="nmv-Ah-Ufg" customClass="HomePageInfoMore" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bPa-jb-vyp">
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="bPa-jb-vyp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -117,7 +117,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hfH-Lt-0T7"/>
                     </view>
                     <connections>
@@ -150,6 +150,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-home-24" width="18" height="18"/>
+        <image name="icons8-home-24" width="12" height="12"/>
     </resources>
 </document>
