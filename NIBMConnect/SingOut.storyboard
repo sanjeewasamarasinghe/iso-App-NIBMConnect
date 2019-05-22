@@ -6,18 +6,20 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sing In-->
+        <!--SING OUT-->
         <scene sceneID="JHU-k9-saH">
             <objects>
                 <viewController id="gOz-6p-WqH" customClass="SingIn" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FSf-SF-cfJ">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" id="FSf-SF-cfJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="125917" translatesAutoresizingMaskIntoConstraints="NO" id="kgn-Qx-vG5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0Y-jh-f2T">
                                 <rect key="frame" x="118" y="295" width="139" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,9 +43,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="WPb-CP-aUa"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kgn-Qx-vG5" secondAttribute="bottom" id="2Yi-ER-vxh"/>
+                            <constraint firstAttribute="trailing" secondItem="kgn-Qx-vG5" secondAttribute="trailing" id="DC4-9u-HjL"/>
+                            <constraint firstItem="kgn-Qx-vG5" firstAttribute="top" secondItem="FSf-SF-cfJ" secondAttribute="top" id="Mcq-GB-EyM"/>
+                            <constraint firstItem="kgn-Qx-vG5" firstAttribute="leading" secondItem="FSf-SF-cfJ" secondAttribute="leading" id="rsR-Y7-bEc"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iq4-LA-YGK"/>
+                    <navigationItem key="navigationItem" title="SING OUT" id="iq4-LA-YGK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="OUY-yp-mqB" kind="show" identifier="Reset" id="4rH-A2-GwA"/>
@@ -51,16 +58,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLf-y1-J3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1596" y="116"/>
+            <point key="canvasLocation" x="-1596" y="115.59220389805098"/>
         </scene>
         <!--Reset Email & Password -->
         <scene sceneID="fe8-dB-SUE">
             <objects>
                 <viewController title="Reset Email &amp; Password " id="OUY-yp-mqB" customClass="ResetEmail_PassWord" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="btF-sn-f1x">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" id="btF-sn-f1x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="125917" translatesAutoresizingMaskIntoConstraints="NO" id="5MK-7C-8sw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q7w-x9-aen">
                                 <rect key="frame" x="46" y="203" width="289" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -96,7 +106,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="rPw-Re-9wq"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5MK-7C-8sw" secondAttribute="bottom" id="VdR-sT-SY8"/>
+                            <constraint firstItem="5MK-7C-8sw" firstAttribute="leading" secondItem="btF-sn-f1x" secondAttribute="leading" id="b1E-z0-ceC"/>
+                            <constraint firstItem="5MK-7C-8sw" firstAttribute="trailing" secondItem="btF-sn-f1x" secondAttribute="trailing" id="fNu-Cg-zAu"/>
+                            <constraint firstItem="5MK-7C-8sw" firstAttribute="top" secondItem="btF-sn-f1x" secondAttribute="top" id="oZF-4G-pp0"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Change" destination="vkV-cD-Oyd" id="fQI-ha-DHr"/>
@@ -130,6 +145,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="125917" width="320" height="568"/>
         <image name="icons8-export-24" width="12" height="12"/>
     </resources>
 </document>
