@@ -44,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="Screen Shot 2019-05-14 at 4.05.04 PM" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-qS-j22">
-                                <rect key="frame" x="37" y="161" width="300" height="300"/>
+                                <rect key="frame" x="51" y="161" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
