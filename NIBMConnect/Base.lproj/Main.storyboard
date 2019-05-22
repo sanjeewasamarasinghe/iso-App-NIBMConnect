@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="125917" translatesAutoresizingMaskIntoConstraints="NO" id="xY5-qf-Om8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="125917" translatesAutoresizingMaskIntoConstraints="NO" id="xY5-qf-Om8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Db-R1-N1k">
@@ -36,23 +36,26 @@
                                     <action selector="singInOutBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztW-1N-YoV"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="Screen Shot 2019-05-14 at 4.05.04 PM" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-qS-j22">
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADD YOU FROFILE " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGZ-FT-TPm">
-                                <rect key="frame" x="114" y="420" width="172" height="24"/>
+                                <rect key="frame" x="101" y="469" width="172" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2019-05-14 at 4.05.04 PM" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-qS-j22">
-                                <rect key="frame" x="23" y="182" width="328" height="303"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xY5-qf-Om8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C6T-km-LaU"/>
+                            <constraint firstItem="xY5-qf-Om8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cgf-a5-KTx"/>
                             <constraint firstItem="xY5-qf-Om8" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Iiz-Dr-WHe"/>
-                            <constraint firstItem="zQP-qS-j22" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctb-h6-jfo"/>
-                            <constraint firstItem="zQP-qS-j22" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dJs-Ul-eHc"/>
+                            <constraint firstAttribute="bottom" secondItem="xY5-qf-Om8" secondAttribute="bottom" id="Kmn-Mx-7M1"/>
+                            <constraint firstItem="xY5-qf-Om8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mxv-pa-HCD"/>
+                            <constraint firstAttribute="trailing" secondItem="xY5-qf-Om8" secondAttribute="trailing" id="m9A-Vy-XHU"/>
                             <constraint firstItem="xY5-qf-Om8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sFk-Uy-paG"/>
                             <constraint firstItem="xY5-qf-Om8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="waN-n0-7Nt"/>
                         </constraints>
