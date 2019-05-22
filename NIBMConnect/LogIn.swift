@@ -12,12 +12,19 @@ import FirebaseAuth
 import GoogleSignIn
 
 class LogIn: UIViewController {
-
+    @IBOutlet weak var btnLogIn: UIButton!
+    
+    @IBOutlet weak var btnForgot: UIButton!
+    @IBOutlet weak var btnSingUp: UIButton!
+    @IBOutlet weak var btnSingIn: UIButton!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnSingUp.layer.cornerRadius = btnSingUp.frame.height/2
+        btnSingIn.layer.cornerRadius = btnSingIn.frame.height/2
+        btnForgot.layer.cornerRadius = btnForgot.frame.height/2
+        btnLogIn.layer.cornerRadius = btnLogIn.frame.height/2
         // Do any additional setup after loading the view.
     }
     

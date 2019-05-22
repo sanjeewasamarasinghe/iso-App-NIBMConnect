@@ -53,20 +53,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pp-66-S7P">
-                                <rect key="frame" x="33" y="82" width="126" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="tintColor" red="0.2484970843" green="0.2187898871" blue="0.93628562179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="SingIn">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnBack:" destination="5G9-Gb-jdS" eventType="touchUpInside" id="Vxc-h7-pAz"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9p-JS-v2f">
                                 <rect key="frame" x="98" y="358" width="179" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,7 +67,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3m-Bb-aRU">
-                                <rect key="frame" x="229" y="82" width="118" height="46"/>
+                                <rect key="frame" x="259" y="52" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -90,6 +76,20 @@
                                 </state>
                                 <connections>
                                     <action selector="btnSingUp:" destination="5G9-Gb-jdS" eventType="touchUpInside" id="76k-Qf-sxU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pp-66-S7P">
+                                <rect key="frame" x="33" y="52" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" red="0.2484970843" green="0.2187898871" blue="0.93628562179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SingIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="5G9-Gb-jdS" eventType="touchUpInside" id="Vxc-h7-pAz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,6 +103,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="hPl-Fi-zPK"/>
                     <connections>
+                        <outlet property="btnForgot" destination="h9p-JS-v2f" id="CZ4-Vb-Hib"/>
+                        <outlet property="btnLogIn" destination="Npd-5H-iaA" id="YaF-fu-XN5"/>
+                        <outlet property="btnSingIn" destination="8pp-66-S7P" id="QGQ-Al-MAV"/>
+                        <outlet property="btnSingUp" destination="U3m-Bb-aRU" id="lkj-MU-OTW"/>
                         <outlet property="txtEmail" destination="H74-8b-3Zi" id="4m5-B5-l2G"/>
                         <outlet property="txtPassword" destination="uD8-gD-dMg" id="Jht-G8-3KT"/>
                         <segue destination="chs-cu-Psy" kind="show" identifier="SingUpOut" id="OSK-FY-3wo"/>
