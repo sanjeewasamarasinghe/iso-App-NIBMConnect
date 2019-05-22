@@ -12,12 +12,15 @@ import Firebase
 
 class SingUp: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var btnSingIn: UIButton!
     
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var txtEmail: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        btnSingIn.layer.cornerRadius = btnSingIn.frame.height/2
+        btnBack.layer.cornerRadius = btnBack.frame.height/2
         // Do any additional setup after loading the view.
     }
     
