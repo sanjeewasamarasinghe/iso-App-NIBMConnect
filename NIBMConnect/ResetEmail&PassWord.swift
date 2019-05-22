@@ -16,10 +16,12 @@ class ResetEmail_PassWord: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txEmail: UITextField!
     
+    @IBOutlet weak var btnReset: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        btnReset.layer.cornerRadius = btnReset.frame.height/2
     }
     @IBOutlet weak var Change: UIButton!
     

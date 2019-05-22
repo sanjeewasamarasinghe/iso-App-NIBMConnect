@@ -12,13 +12,17 @@ class HomeWork: UIViewController {
 
     var txtList = [String]()
     
+    @IBOutlet weak var btnHomeWork: UIButton!
     
+    @IBOutlet weak var btnEntre: UIButton!
     
     @IBOutlet weak var txtAddHomeWork: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        btnHomeWork.layer.cornerRadius = btnHomeWork.frame.height/2
+        btnEntre.layer.cornerRadius = btnEntre.frame.height/2
     }
     @IBOutlet weak var countLable: UILabel!
     

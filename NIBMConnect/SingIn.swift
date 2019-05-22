@@ -11,11 +11,15 @@ import Firebase
 import FirebaseAuth
 
 class SingIn: UIViewController {
-
+    @IBOutlet weak var btnReSet: UIButton!
+    
+    @IBOutlet weak var btnSingOut: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        btnSingOut.layer.cornerRadius = btnSingOut.frame.height/2
+        btnReSet.layer.cornerRadius = btnReSet.frame.height/2
     }
     
     @IBAction func resetPassword(_ sender: Any) {
