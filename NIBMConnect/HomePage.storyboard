@@ -102,7 +102,7 @@
         <scene sceneID="o4F-0q-rYg">
             <objects>
                 <viewController id="nmv-Ah-Ufg" customClass="HomePageInfoMore" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" alpha="0.59999999999999998" contentMode="scaleToFill" id="bPa-jb-vyp">
+                    <view key="view" contentMode="scaleToFill" id="bPa-jb-vyp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
