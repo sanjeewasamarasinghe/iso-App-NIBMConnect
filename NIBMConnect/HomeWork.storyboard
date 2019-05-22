@@ -10,14 +10,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--HOME WORK-->
+        <!--HOMEWORK-->
         <scene sceneID="MJd-dW-Rtb">
             <objects>
                 <viewController id="8l0-dB-FHz" customClass="HomeWork" customModule="NIBMConnect" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pa4-b5-j77">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" id="pa4-b5-j77">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" image="125917" translatesAutoresizingMaskIntoConstraints="NO" id="J9e-Sn-7DW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swC-ze-i1r">
                                 <rect key="frame" x="110" y="359" width="155" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,10 +63,15 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="0cc-OS-Kav"/>
+                        <constraints>
+                            <constraint firstItem="J9e-Sn-7DW" firstAttribute="leading" secondItem="pa4-b5-j77" secondAttribute="leading" id="2UM-pW-ZRT"/>
+                            <constraint firstItem="J9e-Sn-7DW" firstAttribute="trailing" secondItem="pa4-b5-j77" secondAttribute="trailing" id="XxL-1J-aRU"/>
+                            <constraint firstItem="J9e-Sn-7DW" firstAttribute="top" secondItem="pa4-b5-j77" secondAttribute="top" id="a2h-4D-Lsz"/>
+                            <constraint firstAttribute="bottom" secondItem="J9e-Sn-7DW" secondAttribute="bottom" id="c7h-QI-ewK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="HOME WORK" image="icons8-business-30" id="iml-Qg-X6O"/>
-                    <navigationItem key="navigationItem" id="GM2-GL-H6E"/>
+                    <navigationItem key="navigationItem" title="HOMEWORK" id="GM2-GL-H6E"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="countLable" destination="t52-01-wCx" id="vV0-eE-hfa"/>
@@ -83,15 +91,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RaO-H0-jCZ">
-                                <rect key="frame" x="16" y="80" width="343" height="518"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RaO-H0-jCZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RaO-H0-jCZ" firstAttribute="trailing" secondItem="wdj-he-pof" secondAttribute="trailing" id="5Jf-hW-9Il"/>
+                            <constraint firstItem="RaO-H0-jCZ" firstAttribute="bottom" secondItem="wdj-he-pof" secondAttribute="bottom" id="7m3-KV-zp3"/>
+                            <constraint firstItem="RaO-H0-jCZ" firstAttribute="leading" secondItem="wdj-he-pof" secondAttribute="leading" id="iBL-2h-cgg"/>
+                            <constraint firstItem="RaO-H0-jCZ" firstAttribute="top" secondItem="wdj-he-pof" secondAttribute="top" id="rbT-GX-jOU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wdj-he-pof"/>
                     </view>
                     <connections>
@@ -122,6 +135,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="125917" width="320" height="568"/>
         <image name="icons8-business-30" width="15" height="15"/>
     </resources>
 </document>
