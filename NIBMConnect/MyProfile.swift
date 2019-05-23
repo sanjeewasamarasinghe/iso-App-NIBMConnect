@@ -19,7 +19,15 @@ class MyProfile: UIViewController {
     @IBOutlet weak var lastName: UILabel!
     @IBOutlet weak var fristName: UILabel!
     
+    @IBOutlet weak var phoneNo: UILabel!
     
+    @IBOutlet weak var FbProfileUrl: UILabel!
+    @IBOutlet weak var AddressOne: UILabel!
+    @IBOutlet weak var AddressTwo: UILabel!
+    @IBOutlet weak var Email: UILabel!
+    @IBOutlet weak var City: UILabel!
+    @IBOutlet weak var NIC: UILabel!
+    @IBOutlet weak var Age: UILabel!
     
     var connectList = [ConnectModel]()
     var ref:DatabaseReference!
@@ -82,6 +90,18 @@ class MyProfile: UIViewController {
                 Object=ob
                 self.fristName.text=Object.FristName
                 self.lastName.text=Object.LastName
+                self.phoneNo.text=Object.PhoneNumber
+                self.AddressOne.text=Object.AddressLineOne
+                self.AddressTwo.text=Object.AddressLineTwo
+                self.Email.text=Object.Email
+                self.City.text=Object.City
+                self.FbProfileUrl.text=Object.FBProfileUrl
+                self.NIC.text=Object.NIC
+                self.Age.text="32 Years"
+                
+                
+                    
+                
                     let Url = URL(string : (Object.ProfilePicture)!)
                     self.profilrPic.kf.setImage(with : Url)
                 
