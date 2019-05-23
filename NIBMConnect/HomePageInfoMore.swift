@@ -13,8 +13,12 @@ import Kingfisher
 class HomePageInfoMore: UIViewController {
     
     var Person : ConnectModel?
-
-  
+// lbl commiting
+    @IBOutlet weak var lblFn: UILabel!
+    @IBOutlet weak var lblLn: UILabel!
+    @IBOutlet weak var lblPhn: UILabel!
+    @IBOutlet weak var lblEmail: UILabel!
+    
     
     
     
@@ -27,10 +31,16 @@ class HomePageInfoMore: UIViewController {
         
         // Do any additional setup after loading the view.
         self.lblTital.text = Person?.FristName
+        self.lblFn.text = Person?.LastName
+        self.lblLn.text = Person?.NIC
+        self.lblPhn.text = Person?.PhoneNumber
+        self.lblEmail.text = Person?.Email
+        
         image()
     }
     
     func image(){
+        
         let Url = URL(string : (Person?.ProfilePicture!)!)
         ImgPicture.kf.setImage(with : Url)
         
