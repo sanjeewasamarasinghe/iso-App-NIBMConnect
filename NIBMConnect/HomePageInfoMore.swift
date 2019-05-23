@@ -30,11 +30,20 @@ class HomePageInfoMore: UIViewController {
     super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        //lable use 
+        
         self.lblTital.text = Person?.FristName
         self.lblFn.text = Person?.LastName
         self.lblLn.text = Person?.NIC
         self.lblPhn.text = Person?.PhoneNumber
         self.lblEmail.text = Person?.Email
+        
+        // add coner radiyes
+        
+        self.ImgPicture.layer.cornerRadius = 10
+        
+        //Image funtion
         
         image()
     }
