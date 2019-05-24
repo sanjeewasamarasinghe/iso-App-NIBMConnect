@@ -12,6 +12,7 @@ class HomeWork: UIViewController {
 
     var txtList = [String]()
     
+    @IBOutlet weak var lblNote: UILabel!
     @IBOutlet weak var btnHomeWork: UIButton!
     
     @IBOutlet weak var btnEntre: UIButton!
@@ -23,6 +24,10 @@ class HomeWork: UIViewController {
         // Do any additional setup after loading the view.
         btnHomeWork.layer.cornerRadius = btnHomeWork.frame.height/2
         btnEntre.layer.cornerRadius = btnEntre.frame.height/2
+        
+        // user defoult
+        self.lblNote.text=""
+        
     }
     @IBOutlet weak var countLable: UILabel!
     
@@ -40,6 +45,18 @@ class HomeWork: UIViewController {
     }
     
     @IBAction func btnText(_ sender: Any) {
+        
+        //user default
+        
+        let noteone = self.txtAddHomeWork.text
+        
+        let note = noteone
+        
+        UserDefaults.standard.set(note,forKey: "note")
+        
+        
+        self.lblNote.text = UserDefaults.standard.string(forKey: "note");
+        
         txtfile()
         self.txtAddHomeWork.text=""
         if(txtList.count==10){
