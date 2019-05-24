@@ -142,6 +142,27 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		4BEDF3B32297C30C00372B9F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4BEDF3B42297C37C00372B9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BEDF3B52297C3A800372B9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4BFA07052283D3A700956B86 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +188,9 @@
 		4BFA07102283D3A800956B86 /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
+				4BEDF3B52297C3A800372B9F /* Views */,
+				4BEDF3B42297C37C00372B9F /* Models */,
+				4BEDF3B32297C30C00372B9F /* Controllers */,
 				4BEDF3B22297BDE300372B9F /* Storyboard */,
 				4BFA07112283D3A800956B86 /* AppDelegate.swift */,
 				4BFA07132283D3A800956B86 /* ViewController.swift */,
