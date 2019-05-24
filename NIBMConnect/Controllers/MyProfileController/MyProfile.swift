@@ -29,12 +29,17 @@ class MyProfile: UIViewController {
     @IBOutlet weak var NIC: UILabel!
     @IBOutlet weak var Age: UILabel!
     
+    @IBOutlet weak var UiViewSelect: UIView!
+    @IBOutlet weak var viewHight : NSLayoutConstraint!
+    @IBOutlet weak var viewWidth: NSLayoutConstraint!
     // Array
     
     var connectList = [ConnectModel]()
     var ref:DatabaseReference!
     
+    // Amimation select
     
+  
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -125,8 +130,22 @@ class MyProfile: UIViewController {
         })
     }
    
+    //animation
     
-    
+    //override func viewDidAppear(_ animated: Bool) {
+        
+        //self.viewHight.constant = 20.0
+        //self.viewWidth.constant =  20.0
+        
+        //UIView.animate(withDuration: 1.5, delay:0, usingSpringWithDamping:0.2 ,initialSpringVelocity:5.0 ,options : [],animations: {
+            //self.view.layoutIfNeeded()
+            
+        //}){(completed) in
+            
+            
+        //}
+        
+    //}
     
   
     /*

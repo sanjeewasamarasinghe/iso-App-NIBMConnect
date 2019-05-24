@@ -15,6 +15,10 @@ class HomePageInfoMore: UIViewController {
     var Person : ConnectModel?
 // lbl commiting
     
+    @IBOutlet weak var Aminate: UIView!
+    @IBOutlet weak var viewH : NSLayoutConstraint!
+    @IBOutlet weak var viewW : NSLayoutConstraint!
+    
     //
     //UI
     //
@@ -53,6 +57,24 @@ class HomePageInfoMore: UIViewController {
         
         let Url = URL(string : (Person?.ProfilePicture!)!)
         ImgPicture.kf.setImage(with : Url)
+        
+        //self.navigationController?.popViewController(animated: true)
+    }
+    
+    //aminated
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        self.viewH.constant = 200.0
+        self.viewW.constant =  200.0
+        
+        UIView.animate(withDuration: 1.5, delay:0, usingSpringWithDamping:0.2 ,initialSpringVelocity:5.0 ,options : [],animations: {
+            self.view.layoutIfNeeded()
+            
+        }){(completed) in
+            
+            
+        }
         
     }
     

@@ -36,9 +36,13 @@ class HomeWork: UIViewController {
     @IBOutlet weak var countLable: UILabel!
     
     
+    // Func next page selection to the page
+    //
     
     @IBAction func btnNextPage(_ sender: Any) {
+    
     self.performSegue(withIdentifier: "HomeWork", sender: nil)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -50,7 +54,9 @@ class HomeWork: UIViewController {
     
     @IBAction func btnText(_ sender: Any) {
         
-        //user default
+        //user default for selecting each item once //
+        //
+        //
         
         let noteone = self.txtAddHomeWork.text
         
@@ -58,7 +64,9 @@ class HomeWork: UIViewController {
         
         UserDefaults.standard.set(note,forKey: "note")
         
-        
+        //
+        //add user defoult for files 
+        //
         self.lblNote.text = UserDefaults.standard.string(forKey: "note");
         
         txtfile()
