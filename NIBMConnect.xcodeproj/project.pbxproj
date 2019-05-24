@@ -145,19 +145,11 @@
 		4BEDF3B32297C30C00372B9F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4BFA07132283D3A800956B86 /* ViewController.swift */,
-				ACEFCEB02287F28500A2582A /* SingIn.swift */,
-				ACEFCEC322889A2900A2582A /* HomePage.swift */,
-				ACEFCEAC2287E44E00A2582A /* LogIn.swift */,
-				ACDC42F3228A71B200735C78 /* HomeWork.swift */,
-				ACEFCEC722891A8A00A2582A /* MyProfileTouchID.swift */,
-				ACEFCEC922891ACB00A2582A /* MyProfile.swift */,
-				ACEFCECB22894C2F00A2582A /* HomePageInfoMore.swift */,
-				ACDC42FB228BB2F500735C78 /* ResetEmail&PassWord.swift */,
-				ACEFCEBF2288954F00A2582A /* Connect.swift */,
-				ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */,
-				ACEFCEAE2287ED4D00A2582A /* SingUp.swift */,
-				ACEFCEA22287C97300A2582A /* MainViewController.swift */,
+				4BEDF3BD2297D28A00372B9F /* HomeWorkController */,
+				4BEDF3BB2297D24500372B9F /* MyProfileController */,
+				4BEDF3BA2297D21F00372B9F /* LoginController */,
+				4BEDF3B92297D20400372B9F /* HomeController */,
+				4BEDF3B82297D1DB00372B9F /* MainController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,6 +170,54 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4BEDF3B82297D1DB00372B9F /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFCEA22287C97300A2582A /* MainViewController.swift */,
+				4BFA07132283D3A800956B86 /* ViewController.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		4BEDF3B92297D20400372B9F /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFCECB22894C2F00A2582A /* HomePageInfoMore.swift */,
+				ACEFCEC322889A2900A2582A /* HomePage.swift */,
+				ACEFCEBF2288954F00A2582A /* Connect.swift */,
+			);
+			path = HomeController;
+			sourceTree = "<group>";
+		};
+		4BEDF3BA2297D21F00372B9F /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC42FB228BB2F500735C78 /* ResetEmail&PassWord.swift */,
+				ACEFCEAC2287E44E00A2582A /* LogIn.swift */,
+				ACEFCEAE2287ED4D00A2582A /* SingUp.swift */,
+				ACEFCEB02287F28500A2582A /* SingIn.swift */,
+			);
+			path = LoginController;
+			sourceTree = "<group>";
+		};
+		4BEDF3BB2297D24500372B9F /* MyProfileController */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFCEC722891A8A00A2582A /* MyProfileTouchID.swift */,
+				ACEFCEC922891ACB00A2582A /* MyProfile.swift */,
+			);
+			path = MyProfileController;
+			sourceTree = "<group>";
+		};
+		4BEDF3BD2297D28A00372B9F /* HomeWorkController */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC42F3228A71B200735C78 /* HomeWork.swift */,
+				ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */,
+			);
+			path = HomeWorkController;
 			sourceTree = "<group>";
 		};
 		4BFA07052283D3A700956B86 = {
