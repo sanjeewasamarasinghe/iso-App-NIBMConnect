@@ -12,23 +12,38 @@ import Alamofire
 import AlamofireImage
 
 class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
+    
+    //
+    // Table Count
+    //
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return connectList.count
     }
    
-    
+    //
+    //UI
+    //
     @IBOutlet weak var activiyInd: UIActivityIndicatorView!
     
+    //
+    // Func Activity
+    //
     func showActivity(){
         self.view.bringSubviewToFront(self.activiyInd)
         self.activiyInd.startAnimating()
     }
     
+    //
+    //FUNC Activity
+    //
     func  hideActivity(){
         self.view.sendSubviewToBack(self.activiyInd)
         self.activiyInd.stopAnimating()
     }
     
+    //
+    //table View Lode
+    //
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for:indexPath)as! Connect
         
@@ -56,6 +71,9 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         
     }
     
+    //
+    //Func to Pass
+    //
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let destination = segue.destination as? HomePageInfoMore {
@@ -66,10 +84,15 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet weak var tblConnect: UITableView!
     
+    //
+    // Arrey
+    //
     var connectList = [ConnectModel]()
     var ref:DatabaseReference!
     
-    
+    //
+    // Add Data to func loding ...../
+    //
     override func viewDidLoad() {
         self.activiyInd.hidesWhenStopped=true
         super.viewDidLoad()
@@ -117,9 +140,15 @@ class HomePage: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         
     }
     
+    //
+    // Table View Size
+    //
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150.0
     }
+    //
+    // pass function
+    //
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "Details", sender: indexPath.row)

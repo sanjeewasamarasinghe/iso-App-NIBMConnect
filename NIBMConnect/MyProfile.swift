@@ -15,12 +15,12 @@ import Kingfisher
 
 class MyProfile: UIViewController {
 
+    // UI Commponents
+    
     @IBOutlet weak var profilrPic: UIImageView!
     @IBOutlet weak var lastName: UILabel!
     @IBOutlet weak var fristName: UILabel!
-    
     @IBOutlet weak var phoneNo: UILabel!
-    
     @IBOutlet weak var FbProfileUrl: UILabel!
     @IBOutlet weak var AddressOne: UILabel!
     @IBOutlet weak var AddressTwo: UILabel!
@@ -28,6 +28,8 @@ class MyProfile: UIViewController {
     @IBOutlet weak var City: UILabel!
     @IBOutlet weak var NIC: UILabel!
     @IBOutlet weak var Age: UILabel!
+    
+    // Array
     
     var connectList = [ConnectModel]()
     var ref:DatabaseReference!
@@ -38,6 +40,12 @@ class MyProfile: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        //
+        //
+        //
+        
+        //Func Get Data
+        
         ref = Database.database().reference()
         
         self.ref.child("NIBM").observeSingleEvent(of: .value, with: {(snapshot)in

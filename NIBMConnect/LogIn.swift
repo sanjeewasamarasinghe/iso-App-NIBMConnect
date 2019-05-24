@@ -12,21 +12,32 @@ import FirebaseAuth
 import GoogleSignIn
 
 class LogIn: UIViewController {
-    @IBOutlet weak var btnLogIn: UIButton!
     
+    //button
+    
+    @IBOutlet weak var btnLogIn: UIButton!
     @IBOutlet weak var btnForgot: UIButton!
     @IBOutlet weak var btnSingUp: UIButton!
     @IBOutlet weak var btnSingIn: UIButton!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
+    
+    //loading
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Button UI
+        
         btnSingUp.layer.cornerRadius = btnSingUp.frame.height/2
         btnSingIn.layer.cornerRadius = btnSingIn.frame.height/2
         btnForgot.layer.cornerRadius = btnForgot.frame.height/2
         btnLogIn.layer.cornerRadius = btnLogIn.frame.height/2
+        
         // Do any additional setup after loading the view.
     }
+    
+    //Reset Password func
     
     @IBAction func resetBtn(_ sender: Any) {
         
@@ -59,15 +70,23 @@ class LogIn: UIViewController {
         }
     }
    
+    
+    // Back Button
+    
     @IBAction func btnBack(_ sender: Any) {
-        
        
          self.dismiss(animated: true, completion: nil)
        
     }
+    
+    // Sing Up Button
+    
     @IBAction func btnSingUp(_ sender: Any) {
         self.performSegue(withIdentifier: "SingUpOut", sender: nil)
     }
+    
+    // Sing up in button
+    
     @IBAction func btnLogin(_ sender: Any) {
         Auth.auth().signIn(withEmail: self.txtEmail.text!,password:self.txtPassword.text!){
             [weak self] user, error in guard let strongSelf = self else {return}

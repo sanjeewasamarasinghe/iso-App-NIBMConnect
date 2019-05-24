@@ -11,22 +11,30 @@ import Firebase
 import FirebaseAuth
 
 class ResetEmail_PassWord: UIViewController {
-    @IBOutlet weak var newNewPassWord: UITextField!
     
+    //
+    //UI
+    //
+    @IBOutlet weak var newNewPassWord: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txEmail: UITextField!
-    
     @IBOutlet weak var btnReset: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //
+        //
+        //
         btnReset.layer.cornerRadius = btnReset.frame.height/2
     }
+    
+    //UI
     @IBOutlet weak var Change: UIButton!
     
  
-    
+    // Func Reset
     @IBAction func btnReset(_ sender: Any) {
         
         var newPassword = self.newNewPassWord.text

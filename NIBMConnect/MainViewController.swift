@@ -14,9 +14,13 @@ import GoogleSignIn
 
 class MainViewController: UIViewController ,GIDSignInUIDelegate{
 
+// Button
+    
     @IBOutlet weak var MainNext: UIButton!
 
     @IBOutlet weak var SingInOut: UIButton!
+    
+    
     override func viewDidLoad() {
     super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
@@ -26,11 +30,15 @@ class MainViewController: UIViewController ,GIDSignInUIDelegate{
         self.performSegue(withIdentifier: "singInOut", sender: nil)
     }
     
-
+// next page
     
     @IBAction func showNext(_ sender: Any) {
         self.performSegue(withIdentifier: "LogIn", sender: nil)
     }
+    
+    
+//change pagers
+    
     override func viewWillAppear(_ animated: Bool) {
         AppTempData.userHandleApp=Auth.auth().addStateDidChangeListener{(auth,user)in
             if user == nil{

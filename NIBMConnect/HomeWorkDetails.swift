@@ -12,14 +12,25 @@ class HomeWorkDetails: UIViewController {
     
     var model = [String]()
 
+    //UI
+    
     @IBOutlet weak var txtHomeWorkView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
          self.txtHomeWorkView.text = ""
+        
+        //
+        // Call Func
+        //
         homwWorkAdd()
        
     }
     
+    //
+    // Func Home Work Add
+    //
     public func homwWorkAdd(){
         let fileUrlProject = Bundle.main.path(forResource: "HomeWork", ofType: "txt")
         

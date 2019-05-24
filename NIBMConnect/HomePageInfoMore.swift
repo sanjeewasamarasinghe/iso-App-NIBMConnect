@@ -14,14 +14,14 @@ class HomePageInfoMore: UIViewController {
     
     var Person : ConnectModel?
 // lbl commiting
+    
+    //
+    //UI
+    //
     @IBOutlet weak var lblFn: UILabel!
     @IBOutlet weak var lblLn: UILabel!
     @IBOutlet weak var lblPhn: UILabel!
     @IBOutlet weak var lblEmail: UILabel!
-    
-    
-    
-    
     @IBOutlet weak var ImgPicture: UIImageView!
     @IBOutlet weak var lblTital: UILabel!
     
@@ -48,6 +48,7 @@ class HomePageInfoMore: UIViewController {
         image()
     }
     
+    // Load image
     func image(){
         
         let Url = URL(string : (Person?.ProfilePicture!)!)

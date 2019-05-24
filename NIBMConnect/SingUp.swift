@@ -11,22 +11,32 @@ import FirebaseAuth
 import Firebase
 
 class SingUp: UIViewController {
+    
+    // Text & Buttons
+    
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSingIn: UIButton!
-    
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var txtEmail: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //UI
         btnSingIn.layer.cornerRadius = btnSingIn.frame.height/2
         btnBack.layer.cornerRadius = btnBack.frame.height/2
+        
         // Do any additional setup after loading the view.
     }
+    
+    // back Func
     
     @IBAction func btnBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    //Create User
+    
     @IBAction func btnSingIn(_ sender: Any) {
         Auth.auth().createUser(withEmail: self.txtEmail.text!, password: self.txtPassword.text! ){
             (user,error)in
