@@ -127,6 +127,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BEDF3B22297BDE300372B9F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFCEA82287E0F900A2582A /* SingUp.storyboard */,
+				ACEFCEA62287D28800A2582A /* SingIn.storyboard */,
+				ACEFCEBA2288416D00A2582A /* SingOut.storyboard */,
+				ACEFCEB822883E1300A2582A /* HomeWork.storyboard */,
+				ACEFCEB622883D7500A2582A /* MyProfile.storyboard */,
+				ACEFCEBD228841EB00A2582A /* HomePage.storyboard */,
+				ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */,
+				4BFA07152283D3A800956B86 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		4BFA07052283D3A700956B86 = {
 			isa = PBXGroup;
 			children = (
@@ -152,30 +167,23 @@
 		4BFA07102283D3A800956B86 /* NIBMConnect */ = {
 			isa = PBXGroup;
 			children = (
+				4BEDF3B22297BDE300372B9F /* Storyboard */,
 				4BFA07112283D3A800956B86 /* AppDelegate.swift */,
 				4BFA07132283D3A800956B86 /* ViewController.swift */,
-				4BFA07152283D3A800956B86 /* Main.storyboard */,
 				4BFA07182283D3B000956B86 /* Assets.xcassets */,
 				4BFA071A2283D3B000956B86 /* LaunchScreen.storyboard */,
 				4BFA071D2283D3B000956B86 /* Info.plist */,
 				ACEFCEAA2287E3C300A2582A /* GoogleService-Info.plist */,
 				ACEFCEA22287C97300A2582A /* MainViewController.swift */,
 				ACEFCEB22287F74600A2582A /* AppTempData.swift */,
-				ACEFCEA42287CA1C00A2582A /* LogIn.storyboard */,
-				ACEFCEA62287D28800A2582A /* SingIn.storyboard */,
-				ACEFCEA82287E0F900A2582A /* SingUp.storyboard */,
 				ACEFCEAC2287E44E00A2582A /* LogIn.swift */,
 				ACEFCEAE2287ED4D00A2582A /* SingUp.swift */,
 				ACEFCEB02287F28500A2582A /* SingIn.swift */,
 				ACEFCEC5228916B800A2582A /* TouchIDAuthentication.swift */,
-				ACEFCEB622883D7500A2582A /* MyProfile.storyboard */,
 				ACEFCEC922891ACB00A2582A /* MyProfile.swift */,
-				ACEFCEB822883E1300A2582A /* HomeWork.storyboard */,
 				ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */,
 				ACDC42F3228A71B200735C78 /* HomeWork.swift */,
-				ACEFCEBA2288416D00A2582A /* SingOut.storyboard */,
 				ACDC42FB228BB2F500735C78 /* ResetEmail&PassWord.swift */,
-				ACEFCEBD228841EB00A2582A /* HomePage.storyboard */,
 				ACEFCEC12288965700A2582A /* ConnectModel.swift */,
 				ACEFCEBF2288954F00A2582A /* Connect.swift */,
 				ACEFCEC322889A2900A2582A /* HomePage.swift */,
