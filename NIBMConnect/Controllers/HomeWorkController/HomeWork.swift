@@ -8,7 +8,17 @@
 
 import UIKit
 
-class HomeWork: UIViewController {
+class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return notex.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "my cell", for: indexPath) as UITableViewCell
+        cell.textLabel?.text = note[indexPath.row]
+        return cell
+    }
+    
     //array list
     var txtList = [String]()
     //UI
@@ -17,6 +27,13 @@ class HomeWork: UIViewController {
     @IBOutlet weak var btnEntre: UIButton!
     @IBOutlet weak var txtAddHomeWork: UITextField!
     
+    
+    //
+    //
+    //
+    var note : [String] = []
+
+    var notex = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,22 +69,41 @@ class HomeWork: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        
+         //note.append("User Default")
+        
+        if notex == UserDefaults.standard.object (forKey: "note") as! [String]{
+    
+        
+        }
+        
+            
+        
+    }
+    
     @IBAction func btnText(_ sender: Any) {
         
         //user default for selecting each item once //
         //
         //
+        var i = 0;
+        
+        
         
         let noteone = self.txtAddHomeWork.text
         
-        let note = noteone
+        note.append(noteone!)
         
         UserDefaults.standard.set(note,forKey: "note")
         
         //
         //add user defoult for files 
         //
-        self.lblNote.text = UserDefaults.standard.string(forKey: "note");
+        UserDefaults.standard.stringArray (forKey: "note");
+        self.lblNote.text = note[i]
+        i = i+1
         
         txtfile()
         self.txtAddHomeWork.text=""
@@ -108,13 +144,34 @@ class HomeWork: UIViewController {
     
         print("Content of the file \(readString)*")
         
-        
+        func getDocumentsDirectory () -> URL {
+            let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+            return paths [0]
+        }
         let fileUrlProject = Bundle.main.path(forResource: "HomeWork", ofType: "txt")
         
-        //let fileNameWrite = "HomeWork"
-        //let path = NSURL (fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileNameWrite)
+        let filename = getDocumentsDirectory().appendingPathComponent("HomeWork.txt")
         
-        let writFileURL = "/Users/Guest/Desktop/nibm/NIBMConnect/HomeWork.txt"
+        //let filex = FileManager.default
+        
+        //let filexx = try filex.attributesOfItem(atPath: "HomeWork.txt")
+        
+        //print(filexx)
+        
+        
+        //let fileNameWrite = "HomeWork"
+        //let writFileURL = NSURL (fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileNameWrite)
+        
+        //let writFileURL = Bundle.main.path(forResource: "HomeWork", ofType: "txt")
+        
+        //let writFileURL = NSURL.mainBundle().U
+        
+        let writFileURL = "/Users/sanjeewasamarasinghe/Desktop/NIBM@5/NIBMConnect/Controllers/HomeWorkController/HomeWork.txt"
+        print("Path xxxx \(fileUrlProject)")
+        
+        //let file = "HomeWork"
+        //let Dodument = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        //let fileURL = Dodument.appendingPathComponent(file).appendingPathExtension("txt")
         
         var readStringProject = ""
         do{
@@ -168,7 +225,7 @@ class HomeWork: UIViewController {
         
         do{
             //write to the file
-           try writeTxt.write(toFile :writFileURL , atomically: false, encoding: String.Encoding.utf8)
+           try writeTxt.write(toFile : writFileURL , atomically: false , encoding: String.Encoding.utf8)
             
         } catch let error as NSError{
             print("Failed to write to URL")

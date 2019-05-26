@@ -33,6 +33,9 @@ class HomeWorkDetails: UIViewController {
     //
     public func homwWorkAdd(){
         let fileUrlProject = Bundle.main.path(forResource: "HomeWork", ofType: "txt")
+         
+        
+        //let writFileURL = Bundle.main.path(forResource: "HomeWork", ofType: "txt")
         
         //let fileNameWrite = "HomeWork"
         //let path = NSURL (fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileNameWrite)

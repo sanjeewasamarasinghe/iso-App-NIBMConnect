@@ -29,6 +29,8 @@ class HomePageInfoMore: UIViewController {
     @IBOutlet weak var ImgPicture: UIImageView!
     @IBOutlet weak var lblTital: UILabel!
     
+    @IBOutlet weak var backBtn: UIView!
+    
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -50,7 +52,11 @@ class HomePageInfoMore: UIViewController {
         //Image funtion
         
         image()
+        
+        //
+        //self.backBtn.layer.cornerRadius = self.backBtn.frame.height/2
     }
+    
     
     // Load image
     func image(){
@@ -61,6 +67,10 @@ class HomePageInfoMore: UIViewController {
         //self.navigationController?.popViewController(animated: true)
     }
     
+    //navigasion button
+    @IBAction func navBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     //aminated
     
     override func viewDidAppear(_ animated: Bool) {

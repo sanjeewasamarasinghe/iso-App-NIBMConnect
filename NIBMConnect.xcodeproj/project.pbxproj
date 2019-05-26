@@ -160,7 +160,6 @@
 				ACEFCEC5228916B800A2582A /* TouchIDAuthentication.swift */,
 				ACEFCEC12288965700A2582A /* ConnectModel.swift */,
 				ACEFCEB22287F74600A2582A /* AppTempData.swift */,
-				ACDC42F7228A8B8B00735C78 /* HomeWork.txt */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +213,7 @@
 		4BEDF3BD2297D28A00372B9F /* HomeWorkController */ = {
 			isa = PBXGroup;
 			children = (
+				ACDC42F7228A8B8B00735C78 /* HomeWork.txt */,
 				ACDC42F3228A71B200735C78 /* HomeWork.swift */,
 				ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */,
 			);
