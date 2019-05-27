@@ -10,30 +10,49 @@ import UIKit
 
 class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notex.count
+        
+        var notee  =   UserDefaults.standard.stringArray (forKey: "note") as? [String]
+            
+        notee?.append(txtxbox )
+            
+            //self.lblNote.text = notee [0]
+            
+        return notee!.count
+        
+        //return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "my cell", for: indexPath) as UITableViewCell
-        cell.textLabel?.text = note[indexPath.row]
-        return cell
+        var notee  =   UserDefaults.standard.stringArray (forKey: "note") as? [String]
+            
+            notee?.append(txtxbox )
+            
+            //self.lblNote.text = notee [0]
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath) as UITableViewCell
+            cell.textLabel?.text = notee![indexPath.row]
+            return cell
+        
+        
     }
     
     //array list
     var txtList = [String]()
+    var txtxbox = String ()
     //UI
     @IBOutlet weak var lblNote: UILabel!
     @IBOutlet weak var btnHomeWork: UIButton!
     @IBOutlet weak var btnEntre: UIButton!
     @IBOutlet weak var txtAddHomeWork: UITextField!
     
+    @IBOutlet weak var tableView: UITableView!
     
     //
     //
     //
-    var note : [String] = []
+   
 
-    var notex = [String]()
+    var note = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,41 +88,71 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         }
     }
     
+        var notex = [String]()
+    
     override func viewDidAppear(_ animated: Bool) {
         
         
          //note.append("User Default")
         
-        if notex == UserDefaults.standard.object (forKey: "note") as! [String]{
     
         
-        }
+        //if  notex == UserDefaults.standard.object (forKey: "note") as? [String] ?? [String] () {
+           // self.lblNote.text = notex[0]
+           // print (notex)
         
+        //}
+        if let notee  =   UserDefaults.standard.stringArray (forKey: "note") as? [String]{
+            
+                //self.lblNote.text = ""
+            
+             //var settext = ""
+            
+            
+            //for n in 0...notee.count{
+                
+               
+                
+                //var textbox = notee[n] + settext
+                
+                //var settext = textbox
+            //}
+            self.lblNote.text = notee [0]
+            
+            //print (notex)
+        }
             
         
     }
-    
+
     @IBAction func btnText(_ sender: Any) {
         
         //user default for selecting each item once //
         //
         //
-        var i = 0;
+        var i : Int = 0;
         
-        
+        print (notex)
         
         let noteone = self.txtAddHomeWork.text
+        
+        txtxbox.append(noteone!)
         
         note.append(noteone!)
         
         UserDefaults.standard.set(note,forKey: "note")
         
+        self.tableView.reloadData()
+        
         //
         //add user defoult for files 
         //
-        UserDefaults.standard.stringArray (forKey: "note");
-        self.lblNote.text = note[i]
-        i = i+1
+        if let notee = UserDefaults.standard.stringArray (forKey: "note"){
+        self.lblNote.text = String(i)
+        
+        //self.lblNote.text = notee[i]
+        }
+        i += 1
         
         txtfile()
         self.txtAddHomeWork.text=""
