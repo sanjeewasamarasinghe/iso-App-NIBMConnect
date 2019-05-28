@@ -33,7 +33,7 @@ class HomeWorkDetails: UIViewController {
     //
     public func homwWorkAdd(){
         let fileUrlProject = Bundle.main.path(forResource: "HomeWork", ofType: "txt")
-         
+        let Url = URL(fileURLWithPath : fileUrlProject!)
         
         //let writFileURL = Bundle.main.path(forResource: "HomeWork", ofType: "txt")
         
@@ -44,7 +44,7 @@ class HomeWorkDetails: UIViewController {
         
         var readStringProject = ""
         do{
-            readStringProject = try String(contentsOfFile: fileUrlProject!,encoding: String.Encoding.utf8)
+            readStringProject = try NSString(contentsOf: Url,encoding: String.Encoding.utf8.rawValue) as String
         }catch let errro as NSError{
             print("Failed to read from project")
             print(errro)

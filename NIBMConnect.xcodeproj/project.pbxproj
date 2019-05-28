@@ -213,7 +213,6 @@
 		4BEDF3BD2297D28A00372B9F /* HomeWorkController */ = {
 			isa = PBXGroup;
 			children = (
-				ACDC42F7228A8B8B00735C78 /* HomeWork.txt */,
 				ACDC42F3228A71B200735C78 /* HomeWork.swift */,
 				ACDC42F5228A81C900735C78 /* HomeWorkDetails.swift */,
 			);
@@ -251,6 +250,7 @@
 				4BEDF3B22297BDE300372B9F /* Storyboard */,
 				4BFA07112283D3A800956B86 /* AppDelegate.swift */,
 				4BFA07182283D3B000956B86 /* Assets.xcassets */,
+				ACDC42F7228A8B8B00735C78 /* HomeWork.txt */,
 				4BFA071A2283D3B000956B86 /* LaunchScreen.storyboard */,
 				4BFA071D2283D3B000956B86 /* Info.plist */,
 				ACEFCEAA2287E3C300A2582A /* GoogleService-Info.plist */,

@@ -11,34 +11,41 @@ import UIKit
 class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        var notee  =   UserDefaults.standard.stringArray (forKey: "note") as? [String]
+        //var notee  =   UserDefaults.standard.stringArray (forKey: "note") as? [String]
             
-        notee?.append(txtxbox )
+        //notee?.append(txtxbox )
             
             //self.lblNote.text = notee [0]
             
-        return notee!.count
+        //return notee!.count
         
         //return 3
+        
+        return textBox.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var notee  =   UserDefaults.standard.stringArray (forKey: "note") as? [String]
+        //var notee  =   UserDefaults.standard.stringArray (forKey: "note") as? [String]
             
-            notee?.append(txtxbox )
+        //textBox.append(txtList )
             
             //self.lblNote.text = notee [0]
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath) as UITableViewCell
-            cell.textLabel?.text = notee![indexPath.row]
+        cell.textLabel?.text = textBox[indexPath.row]
             return cell
         
         
     }
     
+    public func count (){
+        textBox  =   (UserDefaults.standard.stringArray (forKey: "note") as? [String])!
+    }
+    
     //array list
     var txtList = [String]()
-    var txtxbox = String ()
+    var textBox = [String]()
+    var txtxbox : String = ""
     //UI
     @IBOutlet weak var lblNote: UILabel!
     @IBOutlet weak var btnHomeWork: UIButton!
@@ -66,9 +73,15 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         btnEntre.layer.cornerRadius = btnEntre.frame.height/2
         
         // user defoult
+        
+        //func
+        count ()
+        
         self.lblNote.text=""
         
     }
+    
+    
     @IBOutlet weak var countLable: UILabel!
     
     
@@ -88,7 +101,7 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         }
     }
     
-        var notex = [String]()
+    var notex = [String]()
     
     override func viewDidAppear(_ animated: Bool) {
         
@@ -135,6 +148,8 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         print (notex)
         
         let noteone = self.txtAddHomeWork.text
+        
+        textBox.append(noteone!)
         
         txtxbox.append(noteone!)
         
@@ -199,7 +214,9 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         }
         let fileUrlProject = Bundle.main.path(forResource: "HomeWork", ofType: "txt")
         
-        let filename = getDocumentsDirectory().appendingPathComponent("HomeWork.txt")
+        let Url = URL(fileURLWithPath: fileUrlProject!)
+        
+        //let filename = getDocumentsDirectory().appendingPathComponent("HomeWork.txt")
         
         //let filex = FileManager.default
         
@@ -215,8 +232,19 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         
         //let writFileURL = NSURL.mainBundle().U
         
-        let writFileURL = "/Users/sanjeewasamarasinghe/Desktop/NIBM@5/NIBMConnect/Controllers/HomeWorkController/HomeWork.txt"
-        print("Path xxxx \(fileUrlProject)")
+        
+        let theFile : FileHandle? = FileHandle(forWritingAtPath: "../NIBMConnect/HomeWork.txt")
+        
+        if theFile != nil{
+            print("yes")
+        }
+        else {
+            print("no")
+        }
+        
+        let writFileURL = "/Users/sanjeewasamarasinghe/Desktop/NIBM@5/NIBMConnect/HomeWork.txt"
+        print("Path xx1xx \(fileUrlProject)")
+        print("Path xx2xx \(Url)")
         
         //let file = "HomeWork"
         //let Dodument = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -274,7 +302,8 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         
         do{
             //write to the file
-           try writeTxt.write(toFile : writFileURL , atomically: false , encoding: String.Encoding.utf8)
+           try writeTxt.write(to : Url , atomically: true , encoding: String.Encoding.utf8)
+           // try writeTxt.write(toFile : writFileURL , atomically: false , encoding: String.Encoding.utf8)
             
         } catch let error as NSError{
             print("Failed to write to URL")
