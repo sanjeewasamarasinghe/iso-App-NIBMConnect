@@ -130,22 +130,25 @@ class MyProfile: UIViewController {
         })
     }
    
+    @IBOutlet weak var viewaminate: UIStackView!
+    @IBOutlet weak var vieww: NSLayoutConstraint!
+    @IBOutlet weak var viewh: NSLayoutConstraint!
     //animation
     
-    //override func viewDidAppear(_ animated: Bool) {
+    /*override func viewDidAppear(_ animated: Bool) {
         
-        //self.viewHight.constant = 20.0
-        //self.viewWidth.constant =  20.0
+        self.viewh.constant = 20.0
+        self.vieww.constant =  20.0
         
-        //UIView.animate(withDuration: 1.5, delay:0, usingSpringWithDamping:0.2 ,initialSpringVelocity:5.0 ,options : [],animations: {
-            //self.view.layoutIfNeeded()
+        UIView.animate(withDuration: 1.5, delay:0, usingSpringWithDamping:0.2 ,initialSpringVelocity:5.0 ,options : [],animations: {
+            self.view.layoutIfNeeded()
             
-        //}){(completed) in
+        }){(completed) in
             
             
-        //}
-        
-    //}
+        }
+ 
+    }*/
     
   
     /*

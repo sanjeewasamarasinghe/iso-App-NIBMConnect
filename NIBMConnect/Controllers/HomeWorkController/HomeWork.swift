@@ -77,7 +77,7 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         //func
         count ()
         
-        self.lblNote.text=""
+//        self.lblNote.text=""
         
     }
     
@@ -163,7 +163,7 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         //add user defoult for files 
         //
         if let notee = UserDefaults.standard.stringArray (forKey: "note"){
-        self.lblNote.text = String(i)
+       // self.lblNote.text = String(i)
         
         //self.lblNote.text = notee[i]
         }
