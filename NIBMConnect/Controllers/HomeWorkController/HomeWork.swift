@@ -130,7 +130,7 @@ class HomeWork: UIViewController ,UITableViewDelegate,UITableViewDataSource{
                 
                 //var settext = textbox
             //}
-            self.lblNote.text = notee [0]
+            //self.lblNote.text = notee [0]
             
             //print (notex)
         }

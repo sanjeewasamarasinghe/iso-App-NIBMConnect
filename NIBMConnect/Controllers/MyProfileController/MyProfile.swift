@@ -119,16 +119,16 @@ class MyProfile: UIViewController {
                     self.profilrPic.kf.setImage(with : Url)
                 
                 }else{
-                    self.fristName.text="Your information not in data base"
-                    self.lastName.text="Your information not in data base"
-                    self.phoneNo.text="Your information not in data base"
-                    self.AddressOne.text="Your information not in data base"
-                    self.AddressTwo.text="Your information not in data base"
-                    self.Email.text="Your information not in data base"
-                    self.City.text="Your information not in data base"
-                    self.FbProfileUrl.text="Your information not in data base"
-                    self.NIC.text="Your information not in data base"
-                    self.Age.text="32 Years"
+                    self.fristName.text="Your infor not in data base"
+                    self.lastName.text="Your infor not in data base"
+                    self.phoneNo.text="Your infor not in data base"
+                    self.AddressOne.text="Your infor not in data base"
+                    self.AddressTwo.text="Your infor not in data base"
+                    self.Email.text="Your infor not in data base"
+                    self.City.text="Your infor not in data base"
+                    self.FbProfileUrl.text="Your infornot in data base"
+                    self.NIC.text="Your infor not in data base"
+                    self.Age.text="Your infor not in data base"
                     let Url = URL(string : "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/768px-Circle-icons-profile.svg.png")
                     self.profilrPic.kf.setImage(with : Url)
                 }
